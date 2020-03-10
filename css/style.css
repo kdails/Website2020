@@ -1,0 +1,724 @@
+/* style.css */
+
+html {
+    animation: 1.0s ease-in fadeIn;
+    padding: 3em;
+    padding-bottom: 0;
+    overflow-x: hidden;
+    background: linear-gradient(0deg, #abc7ff, #ffffff, #fdd8ff);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 40s ease infinite;
+    -moz-animation: AnimationName 40s ease infinite;
+    animation: AnimationName 40s ease infinite;
+}
+    @-webkit-keyframes AnimationName {
+        0%{background-position:48% 0%}
+        50%{background-position:53% 100%}
+        100%{background-position:48% 0%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:48% 0%}
+        50%{background-position:53% 100%}
+        100%{background-position:48% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:48% 0%}
+        50%{background-position:53% 100%}
+        100%{background-position:48% 0%}
+    }
+
+
+* {
+    cursor: url(https://i.imgur.com/bzdNjDu.png), auto !important;
+}
+
+/* Typography */
+@font-face {
+    font-family: 'SFUI Bold';
+    src: url(../fonts/SF-Pro-Display-Bold.woff2);
+}
+@font-face {
+    font-family: 'SFUI Heavy';
+    src: url(../fonts/SF-Pro-Display-Heavy.woff2);
+}
+@font-face {
+    font-family: 'SFUI Light';
+    src: url(../fonts/SFProDisplay-Light.woff2);
+}
+@font-face {
+    font-family: 'SFUI Medium';
+    src: url(../fonts/SF-Pro-Display-Medium.woff2);
+}
+@font-face {
+    font-family: 'SFUI';
+    src: url(../fonts/SF-Pro-Display-Regular.woff2);
+}
+@font-face {
+    font-family: 'SFUI Semibold';
+    src: url(../fonts/SF-Pro-Display-Semibold.woff2);
+}
+@font-face {
+    font-family: 'SFUI Thin';
+    src: url(../fonts/SFProDisplay-Thin.woff2);
+}
+
+@font-face {
+    font-family: 'GT Merica';
+    src: url(../fonts/gt-america-expanded-black-webfont.woff2);
+}
+}
+h1 {
+    font-family: 'SFUI';
+    font-size: 3em;
+    font-weight: inherit;
+    line-height: 1.25em;
+    margin: 0;
+}
+h1 a:hover {
+    opacity: 0.6;
+}
+h2 {
+    font-family: 'SFUI Bold';
+    font-size: 6vw;
+    font-weight: inherit;
+    line-height: 1.25em;
+    position: relative;
+}
+.h2gt {
+    font-family: 'SFUI Heavy';
+    font-size: 4vw;
+    font-weight: inherit;
+    line-height: 1.25em;
+    position: relative;
+}
+h3 {
+    font-family: 'SFUI';
+    font-size: 1em;
+    font-weight: inherit;
+}
+h4 {
+    font-family: 'SFUI';
+    font-size: 1.25em;
+    font-weight: inherit;
+    line-height: 1.5em;
+    margin: 0;
+}
+p {
+    position: relative;
+    font-family: 'SFUI';
+    font-size: 1.5em;
+    font-weight: inherit;
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: #000000;
+
+}
+p a:hover {
+    opacity: .1;
+    transition: 0.28s;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.28s;
+}
+
+/* GRID */
+.grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* Header */
+header {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 5em;
+    vertical-align: middle;
+
+}
+.klogo {
+    height: 6vw;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+#name {
+    font-family: 'GT Merica';
+    font-size: 2vw;
+    display: inline;
+    position: relative;
+    vertical-align: middle;
+    padding-left: 0.5em;
+}
+.optionList {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.option {
+    text-transform: uppercase;
+    font-family:'GT Merica';
+    opacity: 0.6;
+    display: inline;
+    margin: 0.75vw;
+
+    transition: .28s;
+}
+.selected {
+    opacity: .8;
+    font-family: 'GT Merica';
+}
+.option:hover {
+    opacity: 1;
+    transition: 0.28s;
+}
+
+
+/* Body */
+body {
+    font-family: 'SFUI';
+    color: #000000;
+    display: block;
+}
+div {
+    transition: 0.28s;
+}
+img {
+    -webkit-user-drag: none;
+}
+
+.row {
+    padding: 1.vw;
+}
+.work {
+    text-align: center;
+}
+
+.bottom{
+    background-image: url("../splots/splots7.png");
+    z-index: 2;
+     }
+.top{
+    background: white;
+    z-index: 1;
+     }
+.project {
+  width: 32vw;
+  height: 32vw;
+  position: relative;
+  padding: 1.9vw;
+  left:2vw;
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  border-width: thick;
+  border-color: black;
+  margin-bottom:4vw;
+   }
+.project h2 {
+    font-family: "GT Merica";
+    font-size: 3vw;
+    margin-top: 23.5vw;
+    margin-bottom: 0em;
+}
+.project img {
+    width: 100%;
+    position: absolute;
+    margin-bottom: 2vw;
+    transition: 0.28s;
+}
+.projecttop {
+  width: 32vw;
+  height: 32vw;
+  position: relative;
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  border-width: thick;
+  border-color: black;
+   }
+.left {
+    margin-right: 4vw;
+}
+.right {
+    margin-left: 4vw;
+}
+
+.caption {
+    font-family: 'SFUI Semibold';
+    font-size: 1.25vw;
+    margin: 0em;
+}
+.makeathon {
+    background-image: url("../splots/splots7.png");
+}
+.makeathon h2 {
+    font-family: "GT Merica";
+    color:black;
+}
+.makeathon img {
+    width: 100%;
+
+}
+.grouper {
+    background-image: url("../splots/splots3.png");
+}
+.grouper h2 {
+    font-family: "GT Merica";
+}
+.grouper img {
+    width: 100%;
+}
+.incentivize {
+    background-image: url("../splots/splots2.png");
+}
+.incentivize h2 {
+    font-family: "GT Merica";
+}
+.incentivize img {
+    width: 100%;
+}
+.ftmyers {
+    background-image: url("../splots/splots4.png");
+}
+.ftmyers img {
+      width: 100%;
+}
+.lojack {
+    background-image: url("../splots/splots5.png");
+}
+.lojack img {
+  width:100%;
+}
+.wcbn {
+    background-image: url("../splots/splots6.png");
+}
+.wcbn img {
+    height: 76%;
+}
+.pilotly {
+    background-image: url("../splots/splots7.png");
+
+}
+.pilotly img {
+    margin-top: 2vw;
+    width: 400%;
+}
+.designs {
+    ackground-image: url("../splots/splots8.png");
+}
+.designs img {
+    margin-top: 2vw;
+}
+.photos {
+  background-image: url("../splots/splots.png");
+
+}
+
+#avi {
+    height: 25vw;
+    width: 25vw;
+    border-radius: 120em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Pages */
+.divider {
+    border-top: 4px solid #000000;
+    padding-top: 3em;
+    width:100%;
+}
+.title1 {
+    font-size: 4.2vw;
+    font-family: 'SFUI Semibold';
+}
+.title {
+    font-size: 4.2vw;
+    font-family: 'SFUI Heavy';
+}
+
+.projectimg {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.fullimg {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.ptctitle {
+  width: maximum;
+  font-size: 3.2vw;
+
+  background: linear-gradient(to right, #0bb502 30%, #00cf02 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mapmetitle {
+  width: maximum;
+  font-size: 3.5vw;
+
+  background: linear-gradient(to right, #1c00c9 30%, #0066ff, #007dff 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.makeathontitle {
+  width: maximum;
+  font-size: 3.5vw;
+
+  background: linear-gradient(to right, #16b9ff 30%, #097cad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.groupertitle {
+    width: maximum;
+    font-size: 3.5vw;
+
+    background: linear-gradient(to right, #3d376c, #35849d, #6ffbea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.incentivizetitle {
+    width: maximum;
+    font-size: 3.5vw;
+    background: linear-gradient(137.5deg, #ff8d54, #ffb262 18%, #72b3a5 18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#exploration {
+    margin-top: -5vw;
+    margin-bottom: 3em;
+}
+.ftmyerstitle {
+  width: maximum;
+  font-size: 3.5vw;
+
+  background: linear-gradient(150.5deg, #211f42, #275173, 18%, #3485c1 18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wcbntitle {
+    color: #1D90FF;
+}
+video {
+    border-radius: 0.75vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.28s;
+}
+.lojacktitle {
+    background: url(../work/lojack/loj.png) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+}
+.pilotlytitle {
+    color: #4cb39d;
+}
+.designstitle {
+    background: linear-gradient(150.5deg, #000000, #8117c2, 50%, #3cdd7c 20%, #f2742d 20%, #fc74f3 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.design {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 1em;
+}
+
+.placestitle {
+    background: url(../work/photos/File55.jpg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.3);
+}
+.spacestitle {
+    background: url(../work/photos/spaces1.jpg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.3);
+}
+.facestitle {
+    background: url(../work/photos/faces1.jpg) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.3);
+}
+
+.city {
+    font-size: 1em;
+}
+.photo {
+    display: inline;
+    margin: 1.5em;
+    margin-right: 0;
+
+    height: 37.5vw;
+    border-radius: 0.25vw;
+
+    transition: 0.28s;
+}
+.photo:hover {
+    transform: scale(1.01);
+    transition: 0.28s;
+}
+.last {
+    margin-right: 1.5em;
+}
+.scroll {
+    overflow: scroll;
+    white-space: nowrap;
+    margin-bottom: 3em;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Footer */
+footer {
+    color: #202020;
+    margin-top: 1em;
+    transition: 0.28s;
+}
+footer h4 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.28s;
+}
+footer a:hover {
+    color: #000000;
+    transition: 0.28s;
+}
+i {
+    margin: 0.75vw;
+}
+.links {
+    float: right;
+}
+
+
+/* Scroll To Top */
+#scrollTop {
+    cursor: pointer;
+    outline: none !important;
+
+    background: url(../top.png) center / contain no-repeat;
+    opacity: 0.3;
+
+    position: fixed;
+    bottom: 67.5px;
+    right: 8.5vw;
+    width: 2em;
+    height: 0.8em;
+    z-index: 99;
+
+    transition: 0.28s;
+}
+#scrollTop:hover {
+    opacity: 1;
+    transition: 0.28s;
+}
+#scrollTop.no-display {
+    opacity: 0;
+}
+
+/* Back */
+#back {
+    cursor: pointer;
+    outline: none !important;
+
+    background: url(../back.png) center / contain no-repeat;
+    opacity: 0.3;
+
+    position: fixed;
+    top: 67.5px;
+    left: 8.5vw;
+    width: 0.8em;
+    height: 2em;
+    z-index: 99;
+
+    transition: 0.28s;
+}
+#back:hover {
+    opacity: 1;
+    transition: 0.28s;
+}
+#back.no-display {
+    opacity: 0;
+}
+
+
+/* Responsive Modifications */
+@media screen and (max-width: 1275px) {
+    .project {
+        display: inline-block;
+        position: relative;
+        width: 32vw;
+        height: 32vw;
+        padding: 1.5vw;
+        border-style: solid;
+        border-width: medium;
+        border-color: black;
+        margin-bottom:3vw;
+    }
+    .projecttop {
+        display: inline-block;
+        position: relative;
+        width: 32vw;
+        height: 32vw;
+        border-style: solid;
+        border-width: medium;
+        border-color: black;
+    }
+
+    #exploration {
+        margin-top: 1.5em;
+    }
+    footer {
+        margin-top: 3em;
+    }
+    .links {
+        display: inline-block;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+      margin-bottom: 1.5em;
+      line-height: 3em;
+      justify-content: space-between;
+}
+
+    .klogo {
+        height: 10vw;
+    }
+    #name {
+        font-size: 4.5vw;
+        display: none;
+    }
+    h1 {
+        font-size: 1.75em;
+        margin-top: 7vw;
+    }
+    .h2gt {
+        font-family: 'GT MERICA';
+        font-size: 6vw;
+        font-weight: inherit;
+        line-height: 1.25em;
+        position: relative;
+    }
+    h3 {
+        font-size: 0.75em;
+    }
+    h4 {
+        font-size: 1em;
+    }
+    .option {
+        font-size: 2.0vw;
+        margin: 2vw;
+    }
+    .title {
+        font-size: 1.75em;
+    }
+    .projectimg {
+        height: auto;
+    }
+    .project {
+        display: inline-block;
+        position: relative;
+        height: 50vw;
+        width: 50vw;
+        padding-bottom: 5vw;
+        border-style: solid;
+        border-width: medium;
+        border-color: black;
+        color: #black;
+        text-align: center;
+    }
+    .projecttop {
+        display: inline-block;
+        position: relative;
+        height: 50vw;
+        width: 50vw;
+        border-style: solid;
+        border-width: medium;
+        border-color: black;
+        color: #black;
+        text-align: center;
+    }
+    .project h2 {
+        font-size: 6vw;
+        margin-top: 35vw;
+        margin-bottom: 1vw;
+    }
+    .caption p{
+        font-size: 7vw;
+    }
+    .makeathon {
+        padding-left: 0;
+    }
+    .ftmyers img {
+    }
+    .wcbn img {
+    }
+    .lojack img {
+    }
+    .pilotly img {
+    }
+    .designs img {
+        margin-top: 4vw;
+    }
+    .photos h2 {
+        font-size: 15vw;
+        margin-top: 20vw;
+    }
+    #exploration {
+        margin-top: 1.5em;
+    }
+    .city {
+        font-size: 0.75em;
+    }
+    .photo {
+        height: 45vw;
+        margin: 1em;
+        margin-bottom: 5em;
+        margin-left: 0;
+    }
+    footer {
+        margin-top: 3em;
+        padding-bottom: 2em;
+    }
+    i {
+        transform: scale(1.5);
+        margin-right: 5vw;
+        margin-top: 5vw;
+    }
+    .links {
+        display: inline-block;
+        float: left;
+    }
+    #scrollTop {
+        bottom: 57.5px;
+    }
+    #back {
+        top: 57.5px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0.05%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

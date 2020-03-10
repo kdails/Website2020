@@ -1,0 +1,237 @@
+<!-- makeathon.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Makeathon · Kara Dailey</title>
+
+    <!-- Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/gridiculous.css" type="text/css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#scrollTop').removeClass('no-display');
+          } else {
+              $('#scrollTop').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#back').removeClass('no-display');
+          } else {
+              $('#back').addClass('no-display');
+          }
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="klogo.ico"/>
+    <link rel="icon" type="image/png" href="klogo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113009253-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113009253-1');
+  </script>
+
+<!-- WEBPAGE -->
+<!-- Header -->
+<header>
+  <!-- Nav -->
+  <div class="row">
+    <div class="c12">
+      <a href="letsdraw.html">
+        <img src="klogo.gif" class="klogo" />
+        <div id="name">KARA DAILEY</div>
+      </a>
+      <div class="optionList" style="float: right">
+        <h3 class="option selected"><a href="index.html">work</h3>
+        <h3 class="option"><a href="play.html">play</a></h3>
+        <h3 class="option"><a href="about.html">about</a></h3>
+        <h3 class="option"><a target="_blank" href="kdaileyresume.pdf">resume</a></h3>
+      </div>
+    </div>
+  </div>
+</header>
+    <!-- Title -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c10">
+            <h1 class="title">
+                Makeathon x <a href="https://www.autodesk.com/" target="_blank" style="color: #00a3ff">Autodesk</a><br>
+                First Place, Open Product .
+            </h1>
+        </div>
+        <div class="c1"></div>
+    </div>
+
+<body>
+    <!-- Summary -->
+    <div class="row">
+      <div
+        <div class="c1"></div>
+        <div class="c5">
+            <p>
+            <span style="font-family: SFUI Bold">OVERVIEW</span><br>
+            Ideating a stress free space for high stress populations through physical and digital experiences.
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">OUR TEAM - <a href="https://en.wikipedia.org/wiki/Metis_(mythology)" target="_blank" style="color: #00507d">Team Metis</a></span><br>
+            3 UX Researchers<br>
+            2 UX Designers<br>
+            1 Wellness Specialist<br>
+
+            </p>
+            <p>
+            <span style="font-family: SFUI Bold">MY ROLE</span><br>
+            Product Designer<br>
+            User Experience Designer
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">TIMELINE</span><br>
+            36 hrs<br>
+            February 8-10, 2019
+            </p>
+        </div>
+        <div class="c5 right">
+            <img src="work/makeathon/happypod.gif"><br><br><br>
+        </div>
+        <div class="c1"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="row content">
+        <div class="c1"></div>
+        <div class="c10 divider">
+        <div class="c8">
+            <h1 class="makeathontitle">Background</h1>
+            <p>
+                Makeathon's 2019 Product Design Competition gave teams the freedom to design and build a product without any restrictions. This year the panel of judges were from tech companies including Autodesk, Amazon, National Instruments, and May Mobility.
+            </p>
+
+            <p>
+               During the Makeathon,  participants worked within groups of 5-6, where teams were funneled from different disciplines to collaborate on ideating and conceptualizing a product. My group consisted of a movement scientist, 3 graduate researchers in the information field, and a fellow UX designer who worked on the interface inside the pod. Over 50 teams came out to compete!
+            </p><br>
+
+            <h1 class="makeathontitle">Problem</h1>
+            <p>
+                Our design brief was an open book, "design and build a product without any restrictions but use AutoDesk 360 fusion software somewhere in your process". This problem was open-ended, yet just specific enough for us to come up with a few different applications. From fixing excercise posture to using architecture to negate seasonal affective disorder, our strengths were evidently more concentrated in the area of wellness. We chose to use our group’s experience to solve the problem of seasonal sadness and stress within student populations.
+            </p><br>
+
+            <h1 class="makeathontitle">Ideation</h1>
+            <p>
+                We used a design process that featured a detailed, yet extensive methods to create and filter through ideas without judgement or holds barred. As such, we started by throwing out as many ideas as possible, no matter how far out.<br><br>
+
+                Among our weirdest ideas were a shoulder tickling device to prevent slouching, a natural spectrum light that would activate when recieving a text, and an IOT yoga mat.
+            </p>
+
+            <img src="work/makeathon/makeathonideas.png" class="projectimg"><br>
+
+            <p>
+                But scoping out the ideas that would truly accomplish the goal of creating a beneficial wellness experience was exhausting. How does one create peace in a physical space? What about the feeling that a user experiences when de-stressing? It's very personal, almost a spiritual feeling that we strived to recreate. Even our personas of Happy Pod users struggled to highlight the immaterial feelings we needed to replicate with a digital and physical medium.
+
+                <img src="work/makeathon/makeathonpersonas.png" class="fullimg">
+            </p><br>
+
+            <h1 class="makeathontitle">Solution</h1>
+            <p>
+                Our researchers conducted competitive analysis on other products in the market as well as potential user interviews. We wanted to know what people like, how they de-stress and what they currently use to escape the hustle and bustle of everyday life. Together we painted a user’s journey through personas, features would benefit users, what our product would look like brand-wise and what a personal pod experience might be.
+
+
+                <img src="work/makeathon/podsketch.png" class="projectimg">
+            </p><br>
+
+            <p>
+                We approached the problem by focusing on what we could control – sensory details. We thought about the visual aspect in particular. What if one could personalize their own stress-free paradise? We thought an all encompassing experience with wall to wall screens and Seasonal Affective Disorder defensive light would transport our users to the stress free location of their dreams - perhaps a waterfall or birchwood forest. We focused mostly on the look,feel, and features of the Pod based off of user research.
+            </p>
+
+              <img src="work/makeathon/outsidepod.png" class="fullimg">
+              <br>
+            <h1 class="makeathontitle">My Role</h1>
+            <p>
+                I was originally in charge of branding - colors, sketch of product and logo, but I decided that we needed to step up our product prototyping game more than just a sketch so I took on the task of creating a 3D product model. Prior to Makeathon, I never had any CAD experience but I taught myself how to design, prototype, and render a 3D model in under 36 hours (with thanks to LOTS of coffee). Our team won first place but on top of that, my 3D prototype with AutoDesk's Fusion 360 software won us an additional prize for best runner up use of CAD software across all teams in the competition!
+
+
+            </p><br>
+              <img src="work/makeathon/insidepod.jpg" class="fullimg">
+              <br>
+            <h1 class="makeathontitle">Further Explorations</h1>
+            <p>
+                While we didn’t get as much time as would have liked to do further research and iterations on the project, we did think about how we could better support the idea of destressing in a physical environment - a Happy Pod App. For example, we would have liked to implement a feature that would allow users to upload images and places that were meaningful to them and project those in the pod.
+            </p>
+
+            <p>
+                The time we spent was amazing and I personally learned a lot about interdisciplinary design processes and the many walks of life that bring people into the design and research field. Thank you to Autodesk, the Makeathon team, and all the other great participants for making this event as memorable and exciting as it was!
+
+                <img src="work/makeathon/teammakeathon.png" class="fullimg">
+            </p>
+        </div>
+      </div>
+        <div class="c1"></div>
+    </div>
+
+  </div>
+  <div class="c12 divider">
+  <!--  <hr style="border: 1.5px solid black;"></hr>-->
+  </div>
+  <!-- Scroll To Top -->
+  <div class="c1">
+    <a href="#top" class="no-display" id="scrollTop"></a>
+  </div>
+  </body>
+
+  <footer>
+  <div class="row">
+    <div class="c1"></div>
+    <div class="c12">
+      <br><br>
+      <h4>Like what you see? Send me an email  @<a href="mailto:kadailey@umich.edu?subject=Hey!" target="_blank">kadailey@umich.edu</a></h4>
+      <h5> Site made by me & lots of ☕️</h5>
+      <h4 class="links">
+        <a href="https://twitter.com/k_dails" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/dailey_made/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/k_dails/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/karadailey/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </h4>
+    </div>
+    <div class="c1"></div>
+  </div>
+  </footer>
+  </html>

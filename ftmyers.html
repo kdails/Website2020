@@ -1,0 +1,200 @@
+<!-- ftmyers.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Redesign · Kara Dailey</title>
+
+    <!-- Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/gridiculous.css" type="text/css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#scrollTop').removeClass('no-display');
+          } else {
+              $('#scrollTop').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#back').removeClass('no-display');
+          } else {
+              $('#back').addClass('no-display');
+          }
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="klogo.ico"/>
+    <link rel="icon" type="image/png" href="klogo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113009253-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113009253-1');
+  </script>
+
+<!-- WEBPAGE -->
+<!-- Header -->
+<header>
+  <!-- Nav -->
+  <div class="row">
+    <div class="c12">
+      <a href="letsdraw.html">
+        <img src="klogo.gif" class="klogo" />
+        <div id="name">KARA DAILEY</div>
+      </a>
+      <div class="optionList" style="float: right">
+        <h3 class="option"><a href="index.html">work</h3>
+        <h3 class="option"><a href="play.html">play</a></h3>
+        <h3 class="option"><a href="about.html">about</a></h3>
+        <h3 class="option"><a target="_blank" href="kdaileyresume.pdf">resume</a></h3>
+      </div>
+    </div>
+  </div>
+</header>
+    <!-- Title -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c10">
+            <h1 class="ftmyerstitle title">
+                InfoLab.<br>
+                Citizen Interaction Design Lab.
+            </h1>
+        </div>
+        <div class="c1"></div>
+    </div>
+  </header>
+
+<body>
+    <!-- Summary -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c5">
+            <p>
+            <span style="font-family: SFUI Bold">Overview</span><br>
+            Infolab is a research group that works with government agencies and cities to improve user interaction through design.<br>
+            <br>I joined in September 2018 and worked with Ft.Myers in Florida to consult on their web re-design.
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">Roles</span><br>
+            User Researcher<br>
+            UX Design Consultant
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">Timeline</span><br>
+            September 2018 to December 2018
+            </p>
+        </div>
+        <div class="c5">
+            <img src="work/ftmyers/ftmyers.png">
+        </div>
+        <div class="c1"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="row content">
+      <div class="c1"></div>
+      <div class="c10 divider">
+      <div class="c9">
+            <h1 class="ftmyerstitle">Goal</h1>
+            <p>
+                This project was intended to improve interaction and ease of website usage across all citizen demographics of Ft.Myers.
+            </p><br>
+
+            <h1 class="ftmyerstitle">Context</h1>
+            <p>
+              A government contracted web design company was already half-finished with the design process when we came into the project. We learned quickly after meeting with their representatives that we would not be allowed to focus on the look and feel. So we decided to focus on the information architecture within the navigation bar as well as the search bar salience.             </p><br>
+
+              <h1 class="ftmyerstitle">Research</h1>
+              <p>
+                  The most immediate action in this project was to study the opinions of citizens about what information was necessary to have on the website. We used three qualitative research methods, Heuristic Evalations, Task Scenarios, and Open Card Sorting.
+
+                  <img src="work/ftmyers/research.png" class="projectimg">
+              </p><br>
+            <h1 class="ftmyerstitle">Pain Points</h1>
+            <p>
+              Civic Plus weren't allowing any changes in appearance of items on the site, so we decided to go back to basics and aim for something often overlooked and glaringly incorrect with their current design : The Navigation Bar.<br><br>
+              We also learned that the cost of changing around the hierarchy of the website and the names of categories would take a lot of expensive developer time that Fort Myers did not have to spend.<br><br>
+              We also wanted to Cater to all demographics of users, especially users that were not accessible to us as they were over 1,000 miles away in Florida<br>
+
+                <img src="work/ftmyers/problems.png" class="projectimg">
+            </p><br>
+
+            <h1 class="ftmyerstitle">Recommendations</h1>
+            <p>
+              We finalized our report so to convey the importance of a user centered re-design approach to their team, so when it’s time for their re-fresh with Civic Plus they’ll be able to present them with data to support the changes they want to make.<br>
+              <img src="work/ftmyers/results.png" class="projectimg">
+            </p>
+            <p>
+              We found that the search bar should be bigger. We also found that they should use non-specific terms for locations like ice rink instead of "Skatium". The users of the website were a large majority of tourists and snow birds who only vacation in the winter months so they're not accustomed to local lingo.
+            <br><br>Additionally we wanted to suggest having only one navigation bar instead of three which is a confusing architecture for any website.<br>
+
+        </div>
+        <div class="c1"></div>
+    </div>
+
+  </div>
+  <div class="c12 divider">
+  <!--  <hr style="border: 1.5px solid black;"></hr>-->
+  </div>
+  <!-- Scroll To Top -->
+  <div class="c1">
+    <a href="#top" class="no-display" id="scrollTop"></a>
+  </div>
+  </body>
+
+  <footer>
+  <div class="row">
+    <div class="c1"></div>
+    <div class="c12">
+      <br><br>
+      <h4>Like what you see? Send me an email  @<a href="mailto:kadailey@umich.edu?subject=Hey!" target="_blank">kadailey@umich.edu</a></h4>
+      <h5> Site made by me & lots of ☕️</h5>
+      <h4 class="links">
+        <a href="https://twitter.com/k_dails" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/dailey_made/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/k_dails/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/karadailey/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </h4>
+    </div>
+    <div class="c1"></div>
+  </div>
+  </footer>
+  </html>

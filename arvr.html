@@ -1,0 +1,250 @@
+<!-- arvr.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>AR/VR · Kara Dailey</title>
+
+    <!-- Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/gridiculous.css" type="text/css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#scrollTop').removeClass('no-display');
+          } else {
+              $('#scrollTop').addClass('no-display');
+          }
+        });
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#back').removeClass('no-display');
+          } else {
+              $('#back').addClass('no-display');
+          }
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="klogo.ico"/>
+    <link rel="icon" type="image/png" href="klogo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113009253-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113009253-1');
+  </script>
+
+<!-- WEBPAGE -->
+<!-- Header -->
+<header>
+  <!-- Nav -->
+  <div class="row">
+    <div class="c12">
+      <a href="letsdraw.html">
+        <img src="klogo.gif" class="klogo" />
+        <div id="name">KARA DAILEY</div>
+      </a>
+      <div class="optionList" style="float: right">
+        <h3 class="option selected"><a href="index.html">work</h3>
+        <h3 class="option"><a href="play.html">play</a></h3>
+        <h3 class="option"><a href="about.html">about</a></h3>
+        <h3 class="option"><a target="_blank" href="kdaileyresume.pdf">resume</a></h3>
+      </div>
+    </div>
+  </div>
+</header>
+    <!-- Title -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c10">
+            <h1 class="title">
+                Designing for AR/VR interactions<br>
+            </h1>
+        </div>
+        <div class="c1"></div>
+    </div>
+
+<body>
+    <!-- Summary -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c5">
+            <p>
+            <span style="font-family: SFUI Bold">Overview</span><br>
+           SI 559 is a course that centralized around learning and thinking about designing for AR/VR. This is a graduate level course that focuses on group projects and teamwork to approach certain problems with a solution in AR/VR design.
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">Role</span><br>
+            Interaction Designer<br>
+            AR Interaction developer<br>
+            UX Researcher
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">Timeline</span><br>
+            Fall 2019<br>
+            4 months of low-mid-high fidelity iterations, user testing, competitive analysis, sketching, storyboarding and development on two different projects, 1 in AR and 1 in VR.
+            </p>
+        </div>
+        <div class="c5 right">
+            <img src="work/arvr/process.png">
+        </div>
+        <div class="c1"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="row content">
+        <div class="c1"></div>
+        <div class="c10 divider">
+        <div class="c7">
+            <h1 class="incentivizetitle title">VR Problem</h1>
+            <p>
+                Many people live in areas where there aren’t many opportunities to buy fresh fruits and vegetables. As a volunteer at my community garden, I’ve loved teaching people how to grow food in their own backyard. Growing food for people seems an incredibly difficult task and often times intimidating for those new to gardening. I knew that teaching gardening skills would benefit people in a few different ways but mainly to teach without any repercussions of failure or losing time and money in the process. A VR application that teaches gardening skills would be meaningful for teaching people how to grow food.
+            </p><br>
+
+            <h1 class="title">Design Process</h1>
+            <p>
+                <br>
+                <span style="font-family: SFUI Bold">Where we started</span>
+                <br>My team’s  first step for both AR and VR was to ideate how we may approach our chosen problem. We started with sketching to consider different interactions and as a tool to discuss with one another.<br>
+                <br><br><img src="work/arvr/unnamed.jpg">
+                <br>In terms of a physical prototype- we used clay models of the objects in our scene and set it as a first person experience as most VR applications are. After nailing down the interactions you can view in the gif below. This helped us understand positioning and interaction opportunities.
+            </p>
+
+            <img src="work/arvr/physicalproto.gif" class="projectimg" style="padding-top: 1.5em">
+            <br>
+            <p>
+                <span style="font-family: SFUI Bold">Digital Tool choice</span><br>
+                <br>In choosing my tool, I wanted a tool that was adaptable and did not intimidate me as a designer. I initially attempted to work within the constraints of unity because my development skills were a bit rusty but found the program slow and strenuous to use on my computer. I differed to my second choice, A-Frame. This was my first time using the program, I initially used glitch to write my code and run it in VR on my google cardboard headset which turned out to be a great workflow for me. You can see the gif below for an example on what my first iteration looked like: </br>
+                <img src="work/arvr/first draft.gif" class="projectimg"></p>
+                <p>
+                <br>I learned about AFRAME as a tool and how to place 3D assets in a scene which proved difficult because they were all created in various sizings and automatic positioning. The placement and interaction of the water jug and pitchfork was an uphill battle but ended up in our final design.</br>
+            </p><br>
+
+            <p>
+                <h1 class="title">Final VR Prototype</h1>
+               <p><br>
+                Our ultimate solution includes an interaction for tilling soil, watering the soil, and picking the fruits of our digitally grown labor. There are gaze interactions and click interactions involved throughout the solution. Anything that can be interacted with will get larger if gazed at to signify interaction. There’s additionally lighting and sound that provides users with a deeper sense of immersion.
+               <br>
+                <center><iframe width="1020" height="630" src="https://www.youtube.com/embed/j941GU8-TCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                   <br></p>
+                <p>
+              <h1 class="title">Further Exploration</h1>
+            </p>
+            <p>
+              If we had more time with this prototype, I would’ve loved the opportunity to work on informational pop ups and audio. Although there is scenery audio for immersion purposes, there is definitely a lack of education and teaching users how to actually garden.
+              <br><br><br>
+            </p>
+
+<div class="c12 divider"></div><div class="c12 divider"></div>
+
+            <p>
+              <h1 class="incentivizetitle title">AR Problem</h1>
+            </p>
+            <p>
+              A problem for education and learning about items and objects in the real world would be best set up in an AR application. Brewery experience's are fun, but could be improved significantly with a bit more information on the brewing process and beers themselves. When deciding on a problem, my team set out to approach the lack of interaction and information one gets at a smaller scar brewery. An AR application to support the experience of learning about the origins and process of beer making could make a good brewery experience - great.
+              <br>
+            </p><br>
+            <p>
+            <h1 class="title">Design Process</h1>
+            </p>
+                <br>
+                <p>
+                <span style="font-family: SFUI Bold">Where we started</span>
+                <br>My team’s  first step for this VR design process was to ideate how we may approach our chosen problem in terms of a physical prototype- we used clay models of the objects in our scene and set it as a first person experience as most AR applications are. We were very interested originally in showing what certain machineries do on the floor of the brewery including pipes and tanks. After nailing down the interactions, which you can see below, we needed to move onto prototyping In AR.
+                </p>
+                <p>
+                    <img src="work/arvr/pipeid.png"class="projectimg">
+                    <p>
+                    <img src="work/arvr/hopid.png"class="projectimg"><br></p>
+            <img src="work/arvr/Hnet-image (1).gif" class="projectimg" style="padding-top: 1.5em"><br>
+                <br>
+                <p>
+                <span style="font-family: SFUI Bold">Tool Choice</span>
+                <br> </p>
+                <p>
+                    <br>After my previous experience with A-FRAME, I felt comfortable using that in conjunction with the AR.js library which would allow me to prototype and rapidly iterate on a marker based AR experience within a brewery context.<br>
+                        <br>I also wanted to challenge myself and used Hiro markers that I created and trained to initiate the AR experience. I designed the markers to make sense in context and look aesthetically pleasing enough to exist on a brewery floor or bottle of beer.
+                    <p>
+                    <img src="work/arvr/marker.png"class="projectimg"><br></p>
+              <p>
+                 <h1 class="title">Final AR Prototype</h1>
+                <br> </p>
+                <p>
+                    <br>My ultimate solution included informational blocks that would mask the marker. I built out two different interactions - scanning a marker for machinery information as well as scanning a beer for information on flavors and origins. Each of these markers was trained and can be used with a phone camera or on the glitch site via a webcam. I found training the markers to be the easiest aspect of the development in this application. <br>
+                        <br>The most difficult part was choosing which information was most interesting and most applicable for viewers and brewery- goers. The blocks to the right are the information that wraps the 3D cube in the AR experience.
+                <p>
+                <img src="work/arvr/info.png"class="projectimg"><br></p>
+</p></p><br>
+
+            <p>
+              <h1 class="title">Further Exploration</h1>
+            <p>
+               If I could re-do the section on AR and gave myself more time with the prototype, I would’ve loved the opportunity to work on markers with Vufioria. I think beer cans are art work in and of themselves and the Hiro markers I used with AR.JS don’t do them justice. Vuforia would allow for more creative freedom and creative positioning of the markers.
+              <img src="work/arvr/Hnet-image (3).gif" class="projectimg" style="padding-top: 1.5em"><br><br><br>
+            </p>
+
+</div></div></div>
+
+
+
+    <div class="c12 divider">
+    <!--  <hr style="border: 1.5px solid black;"></hr>-->
+    </div>
+    <!-- Scroll To Top -->
+    <div class="c1">
+      <a href="#top" class="no-display" id="scrollTop"></a>
+    </div>
+    </body>
+
+    <footer>
+    <div class="row">
+      <div class="c1"></div>
+      <div class="c12">
+        <br><br>
+        <h4>Like what you see? Send me an email  @<a href="mailto:kadailey@umich.edu?subject=Hey!" target="_blank">kadailey@umich.edu</a></h4>
+        <h5> Site made by me & lots of ☕️</h5>
+        <h4 class="links">
+          <a href="https://twitter.com/k_dails" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/dailey_made/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/k_dails/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/karadailey/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </h4>
+      </div>
+      <div class="c1"></div>
+    </div>
+    </footer>
+    </html>

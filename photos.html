@@ -1,0 +1,191 @@
+<!-- photos.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Photos · Kara Dailey</title>
+
+    <!-- Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/gridiculous.css" type="text/css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#scrollTop').removeClass('no-display');
+          } else {
+              $('#scrollTop').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#back').removeClass('no-display');
+          } else {
+              $('#back').addClass('no-display');
+          }
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="klogo.ico"/>
+    <link rel="icon" type="image/png" href="klogo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113009253-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113009253-1');
+  </script>
+
+</head>
+
+<!-- WEBPAGE -->
+<!-- Header -->
+<header>
+  <!-- Nav -->
+  <div class="row">
+    <div class="c12">
+      <a href="letsdraw.html">
+        <img src="klogo.gif" class="klogo" />
+        <div id="name">KARA DAILEY</div>
+      </a>
+      <div class="optionList" style="float: right">
+        <h3 class="option"><a href="index.html">work</h3>
+        <h3 class="option"><a href="play.html">play</a></h3>
+        <h3 class="option"><a href="about.html">about</a></h3>
+        <h3 class="option"><a target="_blank" href="kdaileyresume.pdf">resume</a></h3>
+      </div>
+    </div>
+  </div>
+</header>
+    <!-- Title -->
+    <div class="row" id="photos">
+        <div class="c1"></div>
+        <div class="c10">
+            <h1 class="placestitle title">
+                Photos.<br>
+                places, spaces & faces.
+            </h1>
+        </div>
+        <div class="c1"></div>
+    </div>
+  </header>
+
+<body>
+    <!-- Content -->
+    <div class="row content">
+        <div class="c1"></div>
+        <div class="c10 divider">
+            <!-- Places -->
+            <div class="c12 city">
+                <h1 class="placestitle c3">Places</h1>
+                <div class="c9 scroll">
+                    <img src="work/photos/File55.jpg" class="photo">
+                    <img src="work/photos/bridge.jpg" class="photo">
+                    <img src="work/photos/city.jpg" class="photo">
+                    <img src="work/photos/fall.jpg" class="photo">
+                    <img src="work/photos/File51.jpg" class="photo">
+                    <img src="work/photos/File23.jpg" class="photo">
+                    <img src="work/photos/File44.jpg" class="photo">
+                    <img src="work/photos/File50.jpg" class="photo">
+                    <img src="work/photos/File48.jpg" class="photo">
+                    <img src="work/photos/File5.jpg" class="photo">
+                    <img src="work/photos/File57.jpg" class="photo">
+                    <img src="work/photos/File79.jpg" class="photo">
+                    <img src="work/photos/File70.jpg" class="photo">
+                    <img src="work/photos/sand.jpg" class="photo">
+                </div>
+            </div>
+
+            <!-- Spaces -->
+            <div class="c12 city">
+                <h1 class="spacestitle c3">Spaces</h1>
+                <div class="c9 scroll">
+                    <img src="work/photos/spaces1.jpg" class="photo">
+                    <img src="work/photos/File14.jpg" class="photo">
+                    <img src="work/photos/File37.jpg" class="photo">
+                    <img src="work/photos/File52.jpg" class="photo">
+                    <img src="work/photos/omi.jpg" class="photo">
+                    <img src="work/photos/File53.jpg" class="photo">
+                    <img src="work/photos/omi2.jpg" class="photo">
+                </div>
+            </div>
+
+            <!-- Faces -->
+            <div class="c12 city">
+                <h1 class="facestitle c3">Faces</h1>
+                <div class="c9 scroll">
+                    <img src="work/photos/faces1.jpg" class="photo">
+                    <img src="work/photos/peteonfire.jpg" class="photo">
+                    <img src="work/photos/File13.jpg" class="photo">
+                    <img src="work/photos/File47.jpg" class="photo">
+                    <img src="work/photos/File54.jpg" class="photo">
+                    <img src="work/photos/File61.jpg" class="photo">
+                    <img src="work/photos/logan.jpg" class="photo">
+                    <img src="work/photos/pete.jpg" class="photo">
+                    <img src="work/photos/claire.jpg" class="photo last">
+                </div>
+            </div>
+        </div>
+        <div class="c1"></div>
+    </div>
+
+
+    <div class="c12 divider">
+    <!--  <hr style="border: 1.5px solid black;"></hr>-->
+    </div>
+    <!-- Scroll To Top -->
+    <div class="c1">
+      <a href="#top" class="no-display" id="scrollTop"></a>
+    </div>
+    </body>
+
+    <footer>
+    <div class="row">
+      <div class="c1"></div>
+      <div class="c12">
+        <br><br>
+        <h4>Like what you see? Send me an email  @<a href="mailto:kadailey@umich.edu?subject=Hey!" target="_blank">kadailey@umich.edu</a></h4>
+        <h5> Site made by me & lots of ☕️</h5>
+        <h4 class="links">
+          <a href="https://twitter.com/k_dails" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/dailey_made/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/k_dails/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/karadailey/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </h4>
+      </div>
+      <div class="c1"></div>
+    </div>
+    </footer>
+    </html>

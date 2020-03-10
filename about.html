@@ -1,0 +1,146 @@
+<!-- about.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>On · Kara Dailey</title>
+
+    <!-- Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/gridiculous.css" type="text/css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#scrollTop').removeClass('no-display');
+          } else {
+              $('#scrollTop').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#back').removeClass('no-display');
+          } else {
+              $('#back').addClass('no-display');
+          }
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="klogo.ico"/>
+    <link rel="icon" type="image/png" href="klogo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113009253-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113009253-1');
+  </script>
+
+<!-- WEBPAGE -->
+<!-- Header -->
+<header>
+  <!-- Nav -->
+  <div class="row">
+    <div class="c12">
+      <a href="letsdraw.html">
+        <img src="klogo.gif" class="klogo" />
+        <div id="name">KARA DAILEY</div>
+      </a>
+      <div class="optionList" style="float: right">
+        <h3 class="option"><a href="index.html">work</h3>
+        <h3 class="option"><a href="play.html">play</a></h3>
+        <h3 class="option selected"><a href="about.html">about</a></h3>
+        <h3 class="option"><a target="_blank" href="kdaileyresume.pdf">resume</a></h3>
+      </div>
+    </div>
+  </div>
+</header>
+    <!-- Title -->
+    <div class="row">
+      <div class="c1"></div>
+      <div class="c10">
+        <h1 class="h2gt">
+        🤠 Product Designer /<br>
+       iced coffee devotee
+        </h1>
+      </div>
+      <div class="c1"></div>
+    </div>
+
+
+<body>
+    <div class="row content">
+        <div class="c1"></div>
+        <div class="c5">
+
+            <p>
+            I'm Kara, a Masters student studying Human Computer Interaction at <a href="https://www.si.umich.edu/" target="_blank" style="color: #dea000">U of M</a>. This past summer I dug into design research as an intern at <a href="https://www.ptc.com/en/" target="_blank" style="color: #489000">PTC</a>. I'm currently designing at a U of M lab focusing on next generation interface research called <a href="https://www.mi2lab.com/team/" target="_blank" style="color: #5e00c8">MI2 lab</a>. I graduate in May 2020 and am actively looking for my next role.<br><br>
+            Do you also think it's weird that all my favorite words: people, prototyping, pain-points, pixel-perfect products, process and <a href="https://www.karadailey.com/puppy.JPG" target="_blank" style="color: #cb5b00">puppies</a> all start with P...?<br><br>
+        </div>
+        <div class="c1"></div>
+        <div class="c4">
+            <img src="KARA2.gif" id="avi">
+        </div>
+        <div class="c1"></div>
+    </div>
+    <div class="c1"></div>
+    <br><br><br>
+    <div class="c12 divider">
+    <!--  <hr style="border: 1.5px solid black;"></hr>-->
+  </div>
+    <!-- Scroll To Top -->
+    <div class="c1">
+      <a href="#top" class="no-display" id="scrollTop"></a>
+    </div>
+  </body>
+
+  <footer>
+    <div class="row">
+      <div class="c1"></div>
+      <div class="c12">
+        <br><br>
+        <h4>Like what you see? Send me an email  @<a href="mailto:kadailey@umich.edu?subject=Hey!" target="_blank">kadailey@umich.edu</a></h4>
+        <h5> The puppy at the link is my dog, Dusty. Isn't he a cutie?</h5>
+        <h4 class="links">
+          <a href="https://twitter.com/k_dails" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/dailey_made/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/k_dails/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/karadailey/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </h4>
+      </div>
+      <div class="c1"></div>
+    </div>
+  </footer>
+  </html>

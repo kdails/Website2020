@@ -1,0 +1,247 @@
+<!-- incentivize.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Incentivize · Kara Dailey</title>
+
+    <!-- Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/gridiculous.css" type="text/css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#scrollTop').removeClass('no-display');
+          } else {
+              $('#scrollTop').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#back').removeClass('no-display');
+          } else {
+              $('#back').addClass('no-display');
+          }
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="klogo.ico"/>
+    <link rel="icon" type="image/png" href="klogo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113009253-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113009253-1');
+  </script>
+
+<!-- WEBPAGE -->
+<!-- Header -->
+<header>
+  <!-- Nav -->
+  <div class="row">
+    <div class="c12">
+      <a href="letsdraw.html">
+        <img src="klogo.gif" class="klogo" />
+        <div id="name">KARA DAILEY</div>
+      </a>
+      <div class="optionList" style="float: right">
+        <h3 class="option"><a href="index.html">work</h3>
+        <h3 class="option"><a href="play.html">play</a></h3>
+        <h3 class="option"><a href="about.html">about</a></h3>
+        <h3 class="option"><a target="_blank" href="kdaileyresume.pdf">resume</a></h3>
+      </div>
+    </div>
+  </div>
+</header>
+    <!-- Title -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c10">
+            <h1 class="incentivizetitle title">
+                Incentivize.<br>
+                Gamifying Motivation.<br>
+            </h1>
+        </div>
+        <div class="c1"></div>
+    </div>
+  </header>
+
+<body>
+    <!-- Summary -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c5">
+            <p>
+            <span style="font-family: SFUI Bold">Overview</span><br>
+            An application for group based and community driven motivation, promoting a balance between work and play.
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">Roles</span><br>
+            User Interface Designer<br>
+            User Experience Designer
+            User Experience Researcher
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">Timeline</span><br>
+            September - December 2018<br>
+            3 months of low-mid-high fidelity iterations, user testing, competitive analysis, sketching, storyboarding and persona research within student populations.
+            </p>
+        </div>
+        <div class="c5">
+            <img src="work/incentivize/process.png">
+        </div>
+        <div class="c1"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="row content">
+      <div class="c1"></div>
+      <div class="c10 divider">
+      <div class="c9">
+            <h1 class="incentivizetitle">Problem</h1>
+            <p>
+                We humans crave human connection and sometimes everyday tasks and work can get in the way of what we want. This sad reality is a problem, and Incentivize is a solution.
+            </p><br>
+
+            <h1 class="incentivizetitle">Design Process</h1>
+            <p>
+                <span style="font-family: SFUI Bold">Competitive Analysis</span><br>
+                I started out this project with a survey of other motivational tools on the market. I researched 4 competitors who were either direct or indirect. Some had features I was considering for my design, but others were general motivation and organizational applications. In doing this, I learned what was good and what was bad about apps that could be similar to my own.
+            </p>
+
+            <img src="work/incentivize/competitor.png" class="projectimg" style="padding-top: 1.5em">
+            <br>
+            <p class="c12">
+                <span style="font-family: SFUI Bold">Ideation & Brainstorming</span><br>
+                <br>Since my design solution would ideally forge a sense of community among students and foster values such as compassion and understanding towards students of different experiences, I chose value sensitive design to be my main approach to this problem. Brainstorming with pen and paper allowed me the space to be as imaginative as possible when it came to potential solutions to the problem. I then chose eight unique solutions to sketch out on paper.</br>
+                <img src="work/incentivize/sketches.png" class="projectimg"></p>
+                <p>
+                <br>I discovered a range of possible solutions such as starting a motivation club, a browser add-on that mandates free time, and a bet on yourself gambling app. For each of the eight refined solutions, I sketched out five workflows which conveyed how each solution approached the problem.</br>
+            </p><br>
+
+            <p class="c12">
+                <span style="font-family: SFUI Bold">Personas & Scenarios</span><br>
+                Personas are crucial in understanding the user base of a product and narrowing down the focus to the target audience. I defined personas for students who are looking for motivation from their peers or who are looking to motivate peers. These students are all seeking a support system who have goals similarly aligned to their own.
+                <br>
+                <br>
+                These personas aided me in concentrating on the needs of my major user group - tech-savvy students who seek motivation to keep up with their studies or develop a work-life balance.
+              </p><br>
+              <p class="c10">
+                <img src="work/incentivize/personas.png" class="projectimg">
+            </p><br>
+            <p class="c6">
+                <span style="font-family: SFUI Bold">Design Synthesis & Defense</span><br>
+                In order to choose which features to implement, I used the QOC (Questions, Options, Criteria) method to help me understand the pros and cons of different options and the trade-offs amongst them. I identified the critical feature of my project and defined 3 different feature approaches with design rationales.                <br>
+                <br>
+                In all of my personas and story maps, there is one very critical feature in Incentivize; the Incentivize feature aka the request/accept feature .This Incentive feature allows people to incentivize their teammates and friends with challenges and rewards to promote amotivating life with defined incentives.
+              </p><br>
+              <p class="c6">
+                <img src="work/incentivize/qoc.png" class="projectimg">
+            </p><br>
+          </p>
+            <p class="c7">
+                <span style="font-family: SFUI Bold">Paper Prototype</span><br>
+                I first had to sketch out all of the interactions in my notebook and then used paper and a thick folder to create the physical prototype. The folder had a slit in the side so that I could run the paper through so the screen was able to be changed. I sketched quickly but spent my time on thinking about the interaction layout. <br>
+              </p><br>
+              <p class="c5">
+                <img src="work/incentivize/sketch.gif" class="projectimg">
+            </p><br>
+            <p class="c12">
+                <span style="font-family: SFUI Bold">Wireframe/ Mid Fidelity Prototype</span><br>
+                According to user feedback during my testing, the content was “too busy” at this stage. From these critiques I knew that I needed to cut down on necessary content.
+              </p>
+
+              <img src="work/incentivize/wireframe.png" class="projectimg">
+
+            <p class="c6">
+                <br><br>I also learned that the icon on the homepage was too big. I designed this as if it were going to be my final prototype but decided to iterate my design one final time because although I was happy with the interactions, I just wasn’t thrilled with the overall look and feel.
+                <br><br>At this stage it was confirmed that the incentive carrot made sense as the ask for incentives button, which was validating!
+              <br>
+              <p class="c6">
+                <img src="work/incentivize/midfidel.gif" class="projectimg">
+            </p><br>
+            <p class="c12">
+                <span style="font-family: SFUI Bold">High Fidelity Prototype</span><br>
+                I didn’t change any functionality from the MF to HF, but did move a few buttons around (Edit and Log Out) and I cut down the amount of information underneath posts on the Motivation Center. These decisions were based on user feedback. These main changes were all aesthetic choices and an update on the boring look and feel that I had in my mid-fidelity version.
+                </p>
+
+              <img src="work/incentivize/finalwireframe.png" class="projectimg">
+
+            <p class="c12">
+              <h1 class="incentivizetitle">Further Exploration</h1>
+            </p>
+            <p class="c6">
+              I set out to embed motivation and incentivization into my product as it is the backbone of the app. I knew that I could do this by challenging the idea that motivation is something that’s self-directed. I wanted to promote group based and community driven motivation so that there could be a balance between work and play for students, but I can also see this transferring to work environments and sports teams/fitness clubs as well.
+              <br>
+            </p>
+              <p class="c6">
+                <img src="work/incentivize/carrot.png" class="projectimg">
+            </p><br>
+        </div>
+        <div class="c1"></div>
+    </div>
+
+  </div>
+  <div class="c12 divider">
+  <!--  <hr style="border: 1.5px solid black;"></hr>-->
+  </div>
+  <!-- Scroll To Top -->
+  <div class="c1">
+    <a href="#top" class="no-display" id="scrollTop"></a>
+  </div>
+  </body>
+
+  <footer>
+  <div class="row">
+    <div class="c1"></div>
+    <div class="c12">
+      <br><br>
+      <h4>Like what you see? Send me an email  @<a href="mailto:kadailey@umich.edu?subject=Hey!" target="_blank">kadailey@umich.edu</a>.</h4>
+      <h5> Site made by me & lots of ☕️</h5>
+      <h4 class="links">
+        <a href="https://twitter.com/k_dails" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/dailey_made/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/k_dails/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/karadailey/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </h4>
+    </div>
+    <div class="c1"></div>
+  </div>
+  </footer>
+  </html>

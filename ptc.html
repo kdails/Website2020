@@ -1,0 +1,210 @@
+<!-- ptc.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>PTC · Kara Dailey</title>
+
+    <!-- Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/gridiculous.css" type="text/css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#scrollTop').removeClass('no-display');
+          } else {
+              $('#scrollTop').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#back').removeClass('no-display');
+          } else {
+              $('#back').addClass('no-display');
+          }
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="klogo.ico"/>
+    <link rel="icon" type="image/png" href="klogo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113009253-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113009253-1');
+  </script>
+
+<!-- WEBPAGE -->
+<!-- Header -->
+<header>
+  <!-- Nav -->
+  <div class="row">
+    <div class="c12">
+      <a href="letsdraw.html">
+        <img src="klogo.gif" class="klogo" />
+        <div id="name">KARA DAILEY</div>
+      </a>
+      <div class="optionList" style="float: right">
+        <h3 class="option"><a href="index.html">work</h3>
+        <h3 class="option"><a href="play.html">play</a></h3>
+        <h3 class="option"><a href="about.html">about</a></h3>
+        <h3 class="option"><a target="_blank" href="kdaileyresume.pdf">resume</a></h3>
+      </div>
+    </div>
+  </div>
+</header>
+    <!-- Title -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c10">
+            <h1 class="title">
+                <a href="https://www.ptc.com/" target="_blank" style="color: #00c11f">PTC.</a><br>
+                Design Research Intern.
+            </h1>
+        </div>
+        <div class="c1"></div>
+    </div>
+  </header>
+
+<body>
+    <!-- Summary -->
+    <div class="row">
+      <div
+        <div class="c1"></div>
+        <div class="c5">
+            <p>
+            <span style="font-family: SFUI Bold">OVERVIEW</span><br>
+            Cross-functionally planning head to toe UX efforts from User research, comparitive analysis, heuristic analysis and user testing. I also hosted a very fun design thinking workshop for 20+ employees!
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">MY ROLE</span><br>
+            Design Research Intern<br>
+            Design Assistant<br>
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">TEAM</span><br>
+            Bill Cole, Director of Research and Academy<br>
+            Leisa Wert, Sr Director Design Strategy <br>
+            Kim Moroni, Director of User Research <br>
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">TIMELINE</span><br>
+            May 2019 - September 2019
+            </p>
+        </div>
+        <div class="c4 right">
+            <img src="work/ptc/CoverImage.jpg"><br><br><br>
+        </div>
+        <div class="c1"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="row content">
+        <div class="c1"></div>
+        <div class="c10 divider">
+        <div class="c7">
+            <h2 class="ptctitle">Why research?</h2>
+            <p>
+              Although I consider myself a designer, I chose to intern as a design researcher at PTC because I believe design and research are not mutually exclusive, but are actually better together. I wanted to grow as a thoughtful and motivated researcher in order to become a more informed designer come graduation in Spring 2020.<br><br>
+              I was lucky to be able to work within PTC’s central product design team where I worked on several in-progress design and research projects as well as saw a few to completion. Because of my NDA, I won’t go into any details, but instead discuss methods I used and reflect on my personal growth. <br><br>
+            </p>
+
+            <h2 class="ptctitle">May</h2>
+            <p>
+                Within my first week, I was co-creating an exploratory qualitative research study focusing on PTC's ThingWorx IOT Platform for the UX lab at the LIVEWORX digital transformation conference. The UX lab offers 30 different research sessions to conference goers over the course of 3 days, totaling in over 300 hours of interviews and studies with expert users. This was truly the best onboarding experience of my life.<br><br>
+                I was able to talk to project managers, researchers and designers in order to get a better grasp on the many number of product lines at PTC and figure out what group I wanted to work with on my next study.<br><br>
+            </p>
+
+            <img src="work/ptc/liveworx.JPG" class="projectimg"><br>
+            <h2 class="ptctitle">June</h2>
+            <p>
+              June started out strong with my efforts coming to fruition at the LiveWorx conference. I personally completed 14 hours of exploratory interviews over the course of 3 days and talked to over 20 users! After spending lots of time reviewing recordings and notes, I analyzed my results and presented my first two solo research readouts. I decided to present my findings to two different audiences, my original stakeholders and an additional product team that was affected by the findings. I learned how to approach presenting research in a way that was actionable even when the findings weren't necessarily positive.<br><br>
+              These two readouts allowed me to produce a research presentation template for the product design team as well as spur conversations and further research opportunities from both of the teams I presented to. One of these opportunities took shape in the form of a major software release survey. The other spurred a user test/interview study with cross collaboration between myself, stakeholders and the PM team.
+                <img src="work/ptc/presenting.jpg" class="fullimg">
+            </p><br>
+
+            <h2 class="ptctitle">July</h2>
+            <p>
+              By July I had worked with my stakeholders to build the surveys and user tests. I remained pretty clueless about recruiting people to participate in studies. I learned SO MUCH about study recruitment over the second half of my summer and set out on my own personal research study to understand how product teams at PTC test and find their target users.<br><br>
+              I fell down a rabbit hole and into a group called PTC/USER. This group is an independant, not for profit group that is organized by volunteers from companies who build with PTC products. They support, educate and advocate for the creators of PTC softwares. This group was essentially untapped by the research team prior to my study which was looking for very specific users. I built a connection with the president of the group who sent my study information out to the larger body, <a href="https://www.linkedin.com/posts/karadailey_thingworx-ptc-ptcuser-activity-6562456659497746432-YMvm" target="_blank" style="color: #00c11f">that you can see here or below</a>.<br><br>
+              The response I received was overwhelming and ultimately I had to turn participants away. I am so happy that I was able to help build a connection that was  a mutually beneficial one where the PTC User group would be able to voice their concerns and input on products while the research team would simultaneously gain access to their expertise.
+              <img src="work/ptc/studyinfo.png" class="fullimg">
+
+            </p><br>
+            <h2 class="ptctitle">August</h2>
+            <p>
+              August was a month of wrapping up of data analysis and presentation of my findings to stakeholders. In light of that, I participated in the Intern Blog series with a post called, <a href="https://www.linkedin.com/pulse/think-ux-3-tips-powerful-presentation-kara-dailey/" target="_blank" style="color: #00c11f">3 UX Tips for a Powerful Presentation</a>. In my final few weeks, I signed, sealed and delivered findings from 2 separate surveys, a user test, an interview as well as an internal comparative analysis. <br><br>
+            </p>
+              <h2 class="ptctitle">Final Thoughts</h2>
+              <p>
+              I had amazing mentors throughout my summer internship and particularly admirable female role models who were willing to push me and offer guidance along my journey in navigating research and design at PTC. Not only did I leave my internship experience understanding how UX Design and Research work within a large scale enterprise software company but with more confidence as a practiced and informed researcher.<br><br>
+              If you’re interested in learning more about my summer at PTC, I would love the opportunity to discuss.
+            </p>
+
+</div>
+  </div>
+  <div class="c12 divider">
+  <!--  <hr style="border: 1.5px solid black;"></hr>-->
+</div>
+  <!-- Scroll To Top -->
+
+    <a href="#top" class="no-display" id="scrollTop"></a>
+  </div>
+</body>
+
+<footer>
+  <div class="row">
+    <div class="c1"></div>
+    <div class="c12">
+      <br><br>
+      <h4>Like what you see? Send me an email  @<a href="mailto:kadailey@umich.edu?subject=Hey!" target="_blank">kadailey@umich.edu</a></h4>
+      <h5> Site made by me & lots of ☕️</h5>
+      <h4 class="links">
+        <a href="https://twitter.com/k_dails" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/dailey_made/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/k_dails/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/karadailey/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </h4>
+    </div>
+    <div class="c1"></div>
+  </div>
+</footer>
+</html>

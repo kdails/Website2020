@@ -1,0 +1,277 @@
+<!-- Grouper.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Grouper · Kara Dailey</title>
+
+    <!-- Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/gridiculous.css" type="text/css">
+    <link href="../css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#scrollTop').removeClass('no-display');
+          } else {
+              $('#scrollTop').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#back').removeClass('no-display');
+          } else {
+              $('#back').addClass('no-display');
+          }
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="../klogo.ico"/>
+    <link rel="icon" type="image/png" href="../klogo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113009253-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113009253-1');
+  </script>
+
+<!-- WEBPAGE -->
+<!-- Header -->
+<header>
+  <!-- Nav -->
+  <div class="row">
+    <div class="c12">
+      <a href="letsdraw.html">
+        <img src="../klogo.gif" class="klogo" />
+        <div id="name">KARA DAILEY</div>
+      </a>
+      <div class="optionList" style="float: right">
+        <h3 class="option"><a href="../index.html">work</h3>
+        <h3 class="option"><a href="../play.html">play</a></h3>
+        <h3 class="option"><a href="../about.html">about</a></h3>
+        <h3 class="option"><a target="_blank" href="../kdaileyresume.pdf">resume</a></h3>
+      </div>
+    </div>
+  </div>
+</header>
+    <!-- Title -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c10">
+            <h1 class="groupertitle title">
+                Grouper.<br>
+            </h1>
+        </div>
+        <div class="c1"></div>
+    </div>
+  </header>
+
+<body>
+    <!-- Summary -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c5">
+            <p>
+            <span style="font-family: SFUI Bold">Challenge:</span><br>
+            Design an experience for new students to browse, search, and propose new student organizations.
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">Roles</span><br>
+            User Interface Designer<br>
+            User Experience Designer<br>
+            User Experience Researcher
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">Timeline</span><br>
+            January 2019
+            </p>
+        </div>
+        <div class="c5">
+            <img src="../work/grouper/groupermockup.gif"><br><br><br>
+        </div>
+        <div class="c1"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="row content">
+      <div class="c1"></div>
+      <div class="c10 divider">
+      <div class="c8">
+            <h1 class="groupertitle">Problem</h1>
+            <p>
+                Entering University is an incredibly exciting whirwind for new students. However, it’s difficult to get accustomed to the information overload one will face when entering a new environment. As a student myself, I remember having a particularly difficult time with information on clubs and events when at orientation during my freshman year at undergrad.
+            </p><br>
+
+            <h1 class="groupertitle">Research</h1>
+            <p>
+              As a data-driven believer, all of my design decisions in this project are based on data gathered from a competitive analysis of other online student organization hubs as well as user interviews.
+              <br>
+              My process in creation of this experience happened in 4 main steps: Framing, Defining, Iterating and Reflecting.
+              <br>
+              <img src="../work/grouper/outline.png" class="projectimg">
+            </p>
+            <p>
+              <span style="font-family: SFUI Bold">Competitive Analysis</span><br>
+              I started out my design challenge as if it were any other design project, trying to understand what I didn’t know. Context is critical in designing a user centered product, so I started out looking at how information is dispersed and displayed in the current student organization ecosystem at 3 separate universities, UMICH, UWASH, and UMASS.
+              <br>
+              <img src="../work/grouper/companalysis.png" class="projectimg" width="60%">
+              I jotted down important features of these systems and took note of what I thought was useful information, feature presentation, and content.
+              <br>
+            </p><br>
+            <p>
+              <span style="font-family: SFUI Bold">User Interviews</span><br>
+              I needed to learn more about users. I interviewed two groups of people who would directly interact with the experience I was looking to create. I interviewed 4 students as the main users. Additionally, I went to the Academic Affairs Office and interviewed the Coordinator who is the first point of contact in club proposals. The University of Michigan has over 1,600 clubs and groups to join so I needed to know what information is critical in their process, and what could be improved upon.
+              <img src="../work/grouper/interviews.jpg" class="projectimg" width="60%"><br></p>
+              <p>
+              <span style="font-family: SFUI Bold">What did I learn?</span><br>
+              In my discussion with student affairs, I discovered:
+              <ol>1. There’s no submission standard, students often forward forms via email, making things messy for the office.</ol>
+              <ol>2. Forms are a HUGE part of starting and upkeeping a club. The office had over 35 forms to fulfill different needs.</ol>
+              </p>
+              <p>
+              In my discussion with students, I discovered:
+              <ol>3. The current organization hub isn’t mobile-friendly but students ONLY had access to their phones during orientation week.</ol>
+              <ol>4. Information on current website is not up to date - calendar implementation is lacking.</ol>
+            </p>
+              <p>
+                <span style="font-family: SFUI Bold">Persona Creations</span><br>
+                I considered several approaches including participatory design, reflective design and value sensitive design. Since my design solution will intend to forge a sense of community and welcoming atmosphere, creating personas felt necessary for a value sensitive solution.
+                <br>
+                <img src="../work/grouper/personas.jpg" class="projectimg" width="60%">
+                Jotting down persona goals and traits helped guide my design and user journey through the app. This was more of a personal step, but very important in considering value sensitivity.
+                <br>
+              </p>
+              <p>
+                <span style="font-family: SFUI Bold">Design Priority Matrix</span><br>
+                Before coming up with possible solutions, I needed to synthesize and define goal priority for what to incorporate into the final design which I did in the matrix below.
+                <br>
+                <img src="../work/grouper/matrix.png" class="projectimg">
+                The priority matrix is an analytical way for me to make decisions. Based on user interviews, I put those goals into the matrix and weighted them from 1-5 on importance(1-5: nice to have - must have) and severity (1-5: annoyance - critical problem) and multiplied to find priority.<br>
+                <br>
+              </p>
+            <h1 class="groupertitle">Ideation</h1>
+            <p>
+                <span style="font-family: SFUI Bold">Sketching</span><br>
+                My overarching goal was to make learning about and suggesting student organizations as intuitive as possible in this design process.
+              </p>
+              <p>
+                I set out to achieve my goal with 3 sub-goals defined by my matrix
+                <ol>1. Highlight a streamlined form submission hub to propose new organizations.</ol>
+                <ol>2. Help new students by making experience mobile-friendly.</ol>
+                <ol>3. Present students with accurate information and suggestions to navigate the huge number of opportunities.</ol>
+                <img src="../work/grouper/sketching.png" class="projectimg">
+              </p>
+                <p>
+                Once I defined my direction and goals, I started sketching my critical screens to map out the general user flow. I attempted to add in all of the features that I wanted and it felt rough, but logical once sketched.
+            </p>
+            <p>
+                <span style="font-family: SFUI Bold">Wireframe Flow</span><br>
+                After working out the flow with my sketches, I created a more detailed digital version, the wireframe:
+                <br>
+                <img src="../work/grouper/wireframe.png" class="projectimg">
+              </p>
+              <p>
+                I worked out the three most important features in the app. They are Suggested browsing, Favoriting, and Proposing a new organization. I designed the main interface of the app so the user gets closer to his/her goal and logically moving through from left to right.
+              </p>
+            </p><br>
+            <p>
+                <span style="font-family: SFUI Bold">Welcome Flow</span><br>
+                The welcome sequence allows for an opt-out questionnaire where users can browse if they’re not interested in curation. They will get a screen on their suggested tab that will urge them to complete the quiz.
+                <img src="../work/grouper/welcome.png" class="projectimg">
+              </p>
+              <p>
+                When the user moves through the selections, they will encounter categories of interest that were discovered during my competitive analysis phase. Once complete the user will face a suggestion feed where they have the additional capability of searching all clubs from the dropdown. Each of the three tabs in the main app interface represent a different cycle in the users progress in discovering their best fit for an organization.                <br>
+            </p>
+            <p>
+            <span style="font-family: SFUI Bold">Formation Flow</span><br>
+            The formation tab is an aspect of the application where students can propose their own clubs and organizations. I used the information gathered from my interview with the Office of Academic Affairs to create a flow. Every school will have different requirements as discovered in my competitive analysis.
+            <img src="../work/grouper/formation.png" class="projectimg">
+          </p>
+          <p>
+            Once through the steps, the student can submit. After submission, the application status will be updated through the approval process.<br>
+          </p>
+          <h1 class="groupertitle">Final form</h1>
+          <div class="row">
+
+            <div class="c5 left">
+              <p><b>In the suggested discovery tab,</b> users can like their favorite groups and then open up each information card to learn more. I have implemented three different Google products to enhance the user’s experience within the information card.</p>
+              <p>The first is <b>a contact card</b> where the user can email the owner of that organization. Secondly <b>the user can add the up to date meeting time to their Google calendar</b> which is a great way for a new student to plan out their orientation week. Third when a user clicks on the address of the meeting place, <b>they can open up Google Maps</b> to navigate them to their meeting.<b> Many interviewed students expressed how they felt lost in their new environment during their orientation</b>; mapping meeting places will ease anxiety.</p>
+              <p><b>The favorites tab</b> collects organizations that are ‘heart-ed’ or liked in the discovery tab. They can again view the same information but now without having to run through all of the organizations on the news feed.</p>
+            </div>
+            <div class="c5">
+              <iframe align="center" width="438" height="930" src="//invis.io/K9QA0876ZQR" frameborder="0" allowfullscreen></iframe>
+            </div>
+        <p>
+          <br>
+                </div>
+        <h1 class="groupertitle">Grouper Wish Goals</h1><br>
+        <p>
+          I wish that I had more time to design a backend form reception web portal. I knew that was beyond the scope of this challenge, but after hearing about the different user needs from the backend (Office of Student affairs) and the main student user base, the format of the app really needs both a web portal for reviewing forms, and updating information in addition to the submissions and browsing by students.
+          <br>
+          <img src="../work/grouper/groupermockup.png" class="projectimg" width="60%">
+        </p>
+      </div>
+        <div class="c1"></div>
+    </div></div>
+    <div class="c12 divider">
+    <!--  <hr style="border: 1.5px solid black;"></hr>-->
+    </div>
+    <!-- Scroll To Top -->
+    <div class="c1">
+      <a href="#top" class="no-display" id="scrollTop"></a>
+    </div>
+    </body>
+
+    <footer>
+    <div class="row">
+      <div class="c1"></div>
+      <div class="c12">
+        <br><br>
+        <h4>Like what you see? Send me an email  @<a href="mailto:kadailey@umich.edu?subject=Hey!" target="_blank">kadailey@umich.edu</a></h4>
+        <h5> Site made by me & lots of ☕️</h5>
+        <h4 class="links">
+          <a href="https://twitter.com/k_dails" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/dailey_made/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/k_dails/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/karadailey/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </h4>
+      </div>
+      <div class="c1"></div>
+    </div>
+    </footer>
+    </html>

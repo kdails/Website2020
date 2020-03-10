@@ -1,0 +1,191 @@
+<!-- pilotly.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Pilotly · Kara Dailey</title>
+
+    <!-- Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/gridiculous.css" type="text/css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#scrollTop').removeClass('no-display');
+          } else {
+              $('#scrollTop').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#back').removeClass('no-display');
+          } else {
+              $('#back').addClass('no-display');
+          }
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="klogo.ico"/>
+    <link rel="icon" type="image/png" href="klogo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113009253-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113009253-1');
+  </script>
+
+<!-- WEBPAGE -->
+<!-- Header -->
+<header>
+    <!-- Nav -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c10">
+            <a href="index.html">
+                <img src="klogo.png" class="klogo"/>
+                <div id="name">Kara Dailey</div>
+            </a>
+            <div class="optionList" style="float: right">
+                <h3 class="option"><a href="index.html">work</a></h3>
+                <h3 class="option"><a href="about.html">about</a></h3>
+                <h3 class="option"><a target="_blank" href="kdaileyresume.pdf">resume</a></h3>
+            </div>
+        </div>
+        <div class="c1"></div>
+    </div>
+    <!-- Title -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c10">
+            <h1 class="pilotlytitle title">
+                Pilotly.<br>
+                Usability Assessment & Evaluation.
+            </h1>
+        </div>
+        <div class="c1"></div>
+    </div>
+  </header>
+
+<body>
+    <!-- Summary -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c5">
+            <p>
+            <span style="font-family: SFUI Bold">Overview</span><br>
+            Working within a team of 4 to analyze Pilot.ly's current survey tool with various user research methods.
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">Roles</span><br>
+            User Researcher<br>
+            User Experience Designer<br>
+            Project Manager
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">Timeline</span><br>
+            CURRENT
+            </p>
+        </div>
+        <div class="c5">
+            <img src="work/pilotly/pilotly.png">
+        </div>
+        <div class="c1"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="row content">
+        <div class="c1"></div>
+        <div class="c10 divider">
+            <h1 class="pilotlytitle">Problem</h1>
+            <p>
+                Pilot.ly team came to us with a request to evaluate their survey tool using affinity diagramming, typical heuristic analysis, contextual inquiry, competitive analysis, surveys and user testing.
+            </p><br>
+            <h1 class="pilotlytitle">Affinity Diagram</h1>
+            <p>Affinity notes based off 6 user interviews from January / February 2019</p><br>
+              <img src="work/pilotly/affinity.png">
+              <br>
+              <br>
+              <h1 class="pilotlytitle">Personas</h1>
+              <p>Personas based off findings from our Affinity Wall.</p><br>
+              <p class ="c6">
+              <img src="work/pilotly/persona1.png">
+            </p>
+            <p class ="c6">
+              <img src="work/pilotly/persona2.png">
+            </p>
+
+
+            <h1 class="pilotlytitle">This Project is current...check back soon!</h1>
+
+        </div>
+        <div class="c1"></div>
+    </div>
+
+
+    <!-- Scroll To Top -->
+    <div class="c1">
+        <a href="#top" class="no-display" id="scrollTop"></a>
+        </div>
+
+    <!-- Back -->
+    <div class="c1">
+        <a href="index.html" class="no-display" id="back"></a>
+    </div>
+</body>
+
+<footer>
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c6">
+          <h4>If you’re looking to work with me or simply need coffee recommendations, feel free to email me at <a href="mailto:kadailey@umich.edu?subject=Hey!" target="_blank">kadailey@umich.edu</a>.</h4>
+      </div>
+      <div class="c2"></div>
+      <div class="c2">
+          <h4 class="links">
+              <a href="https://twitter.com/k_dails"  target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/dailey_made/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/k_dails/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/karadailey/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </h4>
+        </div>
+        <div class="c1"></div>
+    </div>
+</footer>
+</html>

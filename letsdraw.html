@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+
+<head id="top">
+  <meta charset="UTF-8">
+  <title>Kara Dailey</title>
+
+  <!-- Responsive Web Design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/gridiculous.css" type="text/css">
+  <link href="css/hover-min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <!-- Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script>
+    /* Scroll button appears on scroll */
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 20) {
+        $('#scrollTop').removeClass('no-display');
+      } else {
+        $('#scrollTop').addClass('no-display');
+      }
+    });
+
+    /* Smooth Scrolling */
+    $(document).ready(function() {
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 500, function() {
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+
+    /* Back button appears on scroll */
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 20) {
+        $('#back').removeClass('no-display');
+      } else {
+        $('#back').addClass('no-display');
+      }
+    });
+  </script>
+
+  <!-- Webpage Icons -->
+  <link rel="icon" type="image/x-icon" href="klogo.ico" />
+  <link rel="icon" type="image/png" href="klogo.png" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113009253-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-113009253-1');
+  </script>
+
+  <!-- WEBPAGE -->
+  <!-- Header -->
+  <header>
+    <!-- Nav -->
+    <div class="row">
+      <div class="c12">
+        <a href="index.html">
+          <img src="klogo.gif" class="klogo" />
+          <div id="name">KARA DAILEY</div>
+        </a>
+        <div class="optionList" style="float: right">
+          <h3 class="option"><a href="index.html">work</h3>
+          <h3 class="option"><a href="play.html">play</a></h3>
+          <h3 class="option"><a href="about.html">about</a></h3>
+          <h3 class="option"><a target="_blank" href="kdaileyresume.pdf">resume</a></h3>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <style type="text/css" id="594-post-css">
+
+  frontend #content-holder .content-container {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+}
+    #content-594 #content_ghz3pdx1m {
+      z-index: 2;
+    }
+
+    #content-594 #content_ghz3pdx1m .is-content {}
+
+    #content-594 {
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-attachment: scroll;
+      background-color: #ffffff;
+    }
+
+    #content-594 .sections {
+      margin-top: 0px !important;
+    }
+
+    .is-frontend #content-594 .sections {
+      margin-top: 4.444444444444445rem;
+    }
+
+    html {
+      margin-top: 0px !important;
+    }
+
+    #wpadminbar {
+      top: auto !important;
+      bottom: 0;
+    }
+  </style>
+  <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/AfoQvGp.png" sizes="32x32">
+</head>
+
+<div id="content-594" class="content-container active-content  hide-on-init">
+  <div class="sections">
+
+    <section id="section_oswhqj2x3" class="content-block" data-column-mode-sm="single" data-column-mode-xs="single" data-gutter="no" data-layout="fluid" data-height="fullscreen">
+
+      <div class="container">
+        <div id="row_uvnagq1r0" class="row">
+          <div id="column_xwylu1url" class="column" data-xl-width="12">
+            <div class="content-wrapper">
+
+              <div id="content_ghz3pdx1m" class="column-content" data-module="code">
+
+                <div class="is-content ce-code">
+
+                  <head>
+
+                    <meta charset="utf-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                  </head>
+
+                  <body>
+
+                    <p class="draw">DRAW YOUR WORST🤠</p>
+                    <div id="canvasContainer">
+                      <button type="button" id="btnClear">clear all</button>
+                    </div>
+
+                    <style type="text/css">
+                      .drawshort {
+                        display: none;
+                      }
+
+                      html,
+                      body,
+                      #body {
+                        height: 100%;
+                        width: 100%;
+                        margin: 0;
+                        overflow: hidden;
+                      }
+
+                      canvas {
+                        cursor: url('https://i.imgur.com/bzdNjDu.png'), auto !important;
+                        background-position: 43% 1%;
+                        background-attachment: scroll;
+                        background-repeat: no-repeat;
+                        background-color: white;
+                        background-image: url('https://i.imgur.com/c8dIlyM.png')
+                      }
+
+                      button {
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        padding: 0;
+                      }
+
+                      #btnClear {
+                        position: absolute;
+                        display: inline-block;
+                        color: #000000;
+                        top: 87%;
+                        margin: auto;
+                        left: 89.25%;
+                        font-family: 'SFUI Heavy';
+                        font-size: 20px;
+                        border: none;
+                        padding: 0px 0px;
+                        text-decoration: none;
+                        border-bottom: 2px solid;
+                        background-color: inherit;
+                        user-select: none;
+                        cursor: url('https://i.imgur.com/bzdNjDu.png'), auto !important;
+                      }
+
+                      #btnClear:hover {
+                        cursor: url('https://i.imgur.com/bzdNjDu.png'), auto !important;
+                        color: #ff9a22;
+                      }
+
+                      #btnClear,
+                      #btnClear:focus {
+                        outline: 0;
+                        box-shadow: none !important;
+                      }
+
+                      @media screen and (max-width: 769px) {
+                        #btnClear {
+                          left: 85%;
+                        }
+                      }
+
+
+                      @media screen and (max-width: 415px) {
+                        #btnClear {
+                          user-select: auto;
+                          cursor: pointer;
+                          padding: 2px;
+                          color: black;
+                          font-size: 20px;
+                          left: 72%;
+                        }
+                      }
+
+                      @media screen and (max-width: 376px) {
+                        #btnClear {
+
+                          user-select: all;
+                          cursor: pointer;
+                          padding: 2px;
+                          color: black;
+                          font-size: 20px;
+                          left: 70%;
+                        }
+                      }
+
+                      .draw {
+                        position: absolute;
+                        top: 87%;
+                        left: 4%;
+                        color: #000000;
+                        font-family: 'GT Merica';
+                        font-size: 3em;
+                        user-select: none;
+                        pointer-events: none;
+                        border: none;
+                        text-decoration: none;
+                        opacity: 0.8;
+                      }
+
+                      @media screen and (max-width: 415px) {
+                        .draw {
+                          top: 15%;
+                          opacity: 1;
+                        }
+                      }
+
+
+                      @media screen and (max-width: 376px) {
+                        .draw {
+                          color: black;
+                          top: 20%;
+                          opacity: 1;
+                          left: 8%;
+                        }
+                      }
+                    </style>
+                    <script type="text/javascript">
+                      var drawingApp = (function() {
+
+                        "use strict";
+
+                        var canvasWidth = window.innerWidth,
+                          canvasHeight = window.innerHeight,
+                          clearButton = document.getElementById('btnClear'),
+                          clickX = [],
+                          clickY = [],
+                          clickDrag = [],
+                          paint,
+                          canvas,
+                          context,
+
+                          // Resizes the canvas.
+                          resizeCanvas = function() {
+
+                            canvasWidth = window.innerWidth;
+                            canvasHeight = window.innerHeight;
+
+                            canvas.setAttribute('width', canvasWidth);
+                            canvas.setAttribute('height', canvasHeight);
+
+                            /**
+                             * Your drawings need to be inside this function otherwise they will be reset when
+                             * you resize the browser window and the canvas goes will be cleared.
+                             */
+                            redraw();
+                          },
+
+                          // Clears the canvas.
+                          clearCanvas = function() {
+
+                            context.clearRect(0, 0, canvasWidth, canvasHeight);
+
+                          },
+
+                          // Erase all actions.
+                          eraseAll = function() {
+
+                            clickX = [];
+                            clickY = [];
+                            clickDrag = [];
+                            clearCanvas();
+
+                          },
+
+                          // Redraws the canvas.
+                          redraw = function() {
+
+                            clearCanvas();
+
+                            var radius = 8;
+                            context.strokeStyle = "#ffbb46";
+                            context.lineJoin = "round";
+                            context.lineWidth = radius;
+
+                            for (var i = 0; i < clickX.length; i++) {
+                              context.beginPath();
+                              if (clickDrag[i] && i) {
+                                context.moveTo(clickX[i - 1], clickY[i - 1]);
+                              } else {
+                                context.moveTo(clickX[i] - 1, clickY[i]);
+                              }
+                              context.lineTo(clickX[i], clickY[i]);
+                              context.closePath();
+                              context.stroke();
+                            }
+
+                          },
+
+                          // Adds a point to the drawing array.
+                          // @param x
+                          // @param y
+                          // @param dragging
+                          addClick = function(x, y, dragging) {
+
+                            clickX.push(x);
+                            clickY.push(y);
+                            clickDrag.push(dragging);
+
+                          },
+
+                          // Add mouse and touch event listeners to the canvas
+                          createUserEvents = function() {
+
+                            var press = function(e) {
+                                // Mouse down location
+                                var mouseX = e.pageX - this.offsetLeft,
+                                  mouseY = e.pageY - this.offsetTop;
+
+                                paint = true;
+                                addClick(mouseX, mouseY, false);
+                                redraw();
+                              },
+
+                              drag = function(e) {
+                                if (paint) {
+                                  addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
+                                  redraw();
+                                }
+                                // Prevent the whole page from dragging if on mobile
+                                e.preventDefault();
+                              },
+
+                              release = function() {
+                                paint = false;
+                                redraw();
+                              },
+
+                              cancel = function() {
+                                paint = false;
+                              };
+
+                            // Add mouse event listeners to canvas element
+                            canvas.addEventListener("mousedown", press, false);
+                            canvas.addEventListener("mousemove", drag, false);
+                            canvas.addEventListener("mouseup", release);
+                            canvas.addEventListener("mouseout", cancel, false);
+
+                            // Add touch event listeners to canvas element
+                            canvas.addEventListener("touchstart", press, false);
+                            canvas.addEventListener("touchmove", drag, false);
+                            canvas.addEventListener("touchend", release, false);
+                            canvas.addEventListener("touchcancel", cancel, false);
+
+                          },
+
+                          /**
+                           * Creates a canvas element.
+                           */
+                          init = function() {
+
+                            // Create the canvas (Neccessary for IE because it doesn't know what a canvas element is)
+                            canvas = document.createElement('canvas');
+                            canvas.setAttribute('width', canvasWidth);
+                            canvas.setAttribute('height', canvasHeight);
+                            canvas.setAttribute('id', 'canvas');
+                            document.getElementById('canvasContainer').appendChild(canvas);
+                            if (typeof G_vmlCanvasManager !== "undefined") {
+                              canvas = G_vmlCanvasManager.initElement(canvas);
+                            }
+                            context = canvas.getContext("2d"); // Grab the 2d canvas context
+                            // Note: The above code is a workaround for IE 8 and lower. Otherwise we could have used:
+                            //     context = document.getElementById('canvas').getContext("2d");
+
+                            // Add mouse events
+                            // ----------------
+
+                            createUserEvents();
+
+                            clearButton.addEventListener("mousedown", eraseAll, false);
+                            window.addEventListener("resize", resizeCanvas);
+
+                          };
+
+                        return {
+
+                          init: init
+
+                        };
+
+                      }());
+
+                      drawingApp.init();
+                    </script>
+                    <!-- Scroll To Top -->
+                    <div class="c1">
+                      <a href="#top" class="no-display" id="scrollTop"></a>
+                    </div>
+
+                  </body>
+                  <footer>
+                    <div class="row">
+                      <div class="c1"></div>
+                      <div class="c6">
+                        <br><br>
+                        <h4>If you’re looking to work with me or simply need coffee recommendations, feel free to email me at <a href="mailto:kadailey@umich.edu?subject=Hey!" target="_blank">kadailey@umich.edu</a>.</h4>
+                        <h5> Website built with code only my mother could ❤️</h5>
+                      </div>
+                      <div class="c2"></div>
+                      <div class="c2">
+                        <h4 class="links">
+                          <a href="https://twitter.com/k_dails" target="_blank"><i class="fab fa-twitter"></i></a>
+                          <a href="https://www.instagram.com/dailey_made/" target="_blank"><i class="fab fa-instagram"></i></a>
+                          <a href="https://www.instagram.com/k_dails/" target="_blank"><i class="fab fa-instagram"></i></a>
+                          <a href="https://www.linkedin.com/in/karadailey/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </h4>
+                      </div>
+                      <div class="c1"></div>
+                    </div>
+                  </footer>
+
+</html>

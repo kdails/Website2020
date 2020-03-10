@@ -1,0 +1,240 @@
+<!-- mapme.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>MapMe · Kara Dailey</title>
+
+    <!-- Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/gridiculous.css" type="text/css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#scrollTop').removeClass('no-display');
+          } else {
+              $('#scrollTop').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('#back').removeClass('no-display');
+          } else {
+              $('#back').addClass('no-display');
+          }
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="klogo.ico"/>
+    <link rel="icon" type="image/png" href="klogo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113009253-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113009253-1');
+  </script>
+
+<!-- WEBPAGE -->
+<!-- Header -->
+<!-- Header -->
+<header>
+  <!-- Nav -->
+  <div class="row">
+    <div class="c12">
+      <a href="letsdraw.html">
+        <img src="klogo.gif" class="klogo" />
+        <div id="name">KARA DAILEY</div>
+      </a>
+      <div class="optionList" style="float: right">
+        <h3 class="option"><a href="index.html">work</h3>
+        <h3 class="option"><a href="play.html">play</a></h3>
+        <h3 class="option"><a href="about.html">about</a></h3>
+        <h3 class="option"><a target="_blank" href="kdaileyresume.pdf">resume</a></h3>
+      </div>
+    </div>
+  </div>
+</header>
+    <!-- Title -->
+    <div class="row">
+        <div class="c1"></div>
+        <div class="c10">
+            <h1 class="title">
+                <a href="https://www.ptc.com/" target="_blank" style="color: #0066ff">MapMe.</a><br>
+                A better way to shop.
+            </h1>
+        </div>
+        <div class="c1"></div>
+    </div>
+  </header>
+
+<body>
+    <!-- Summary -->
+    <div class="row">
+      <div
+        <div class="c1"></div>
+        <div class="c5">
+            <p>
+            <span style="font-family: SFUI Bold">OVERVIEW</span><br>
+            A project in Improving grocery shopping with pervasive interaction design methods.
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">MY ROLE</span><br>
+            UI/UX Designer<br>
+            Prototype Engineer
+            <br>
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">TEAM</span><br>
+            Youngmin Kim, User Research <br>
+            Jackson Hammond, Project Managment <br>
+            Chen Liang, User Research<br>
+            </p>
+
+            <p>
+            <span style="font-family: SFUI Bold">TIMELINE</span><br>
+            September 2019 - December 2019
+            </p>
+        </div>
+        <div class="c5 ">
+            <img src="work/mapme/mapme.gif">
+        </div>
+        <div class="c1"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="row content">
+        <div class="c1"></div>
+        <div class="c10 divider">
+        <div class="c7">
+            <p><span style="font-family: SFUI Bold">PROBLEM</span><br></p>
+            <h2 class="mapmetitle">Where the heck are the Pickles?</h2>
+            <p>
+              I don’t know about you, but most of my grocery trips now-a-days look something like this:<br>
+            </p>
+            <img src="work/mapme/Store Heatmap.png" class="projectimg"><br>
+            <p>
+              In our information age, ethically applying ubiquitous computing and sensor based technologies to a grocery shopping experience could save users time and money while enhancing efficiency for both users and employees. People want to enjoy their shopping experience but often become frustrated because:<br> <br>
+              1. They are not familiar with the layout of stores. <br><br>
+              2. Keeping track of sales and coupons is difficult.<br><br><br><br>
+              </p>
+            <p><span style="font-family: SFUI Bold">RESEARCH</span><br></p>
+            <h2 class="mapmetitle">How may we help you?</h2>
+            <p>
+                82% of US adults go grocery shopping at a grocery store at least once a week according to a recent Gallup poll. We obsserved shoppers and employees at grocery stores in suburban Detroit to understand our design space.<br><br>
+                After initial observations, we created a cultural probe. The below workbook allowed us to understand positives and pain points in grocery shopping.<br><br>
+            </p>
+            <img src="work/mapme/cultural probe.png" class="projectimg"><br>
+
+            <p>
+              <strong> The real problem we noted was that shoppers had difficulties in finding every last item or remembering to pick up items along the way forcing them to backtrack through the store, wasting time.</strong> If shoppers were not familiar with the grocery store, it took a long time to find what they wanted. <strong>Nearly everyone wanted to see coupons and sale information</strong>. My team and I thought this intersection would be a great space to ideate within so we bought a big ol’ stack of sticky notes to brainstorm.<br><br><br><br>
+
+            <p><span style="font-family: SFUI Bold">IDEATION</span><br></p>
+            <h2 class="mapmetitle">A new way to shop</h2>
+            <img src="work/mapme/outcome.jpg" class="projectimg"><br>
+            <p>
+              The stickies helped ground our two main goals:<br><br>
+              <strong>Give users control over their shopping experience:</strong> How might users navigate the store via their list of items while at the same time allowing shoppers to control their pace and progression? <br><br>
+              <strong>Personalize coupon experiences:</strong> How might we help users save money on products they already plan to buy? <br><br>
+
+              As UX Designer, I explored some solutions to these questions in low-fidelity flows for use in a user enactment:<br><br>
+
+              <img src="work/mapme/wireframes.png" class="fullimg"><br><br>
+
+              Our users loved the idea of a Birds Eye view of the store where they could tap around the map and see their items. We also learned that users felt more comfortable using their own smartphone device versus a built in screen. Moving forward, I made sure to design features to accomplish our two main design goals but otherwise stay out of the way of forcing movements around the store or showing unnecessary information. <br> <br>
+
+              <img src="work/mapme/user enactment.png" class="fullimg"><br><br>
+
+              Using my user flows for reference with alterations from enactment feedback, I began to map out the information hierarchy focusing on two features, a "bird's eye view" and "list creation that shows what is on sale"<br><br>
+              I wanted to make sure that these features were well-seen, but also emphasize that they lived separately from the app’s other functions like store information and coupon clipping. <br><br>
+
+              <img src="work/mapme/hierarchy.png" class="fullimg"><br><br>
+            </p><br>
+
+            <p><span style="font-family: SFUI Bold">DESIGN</span><br></p>
+            <h2 class="mapmetitle">Consistency with System Architecture</h2>
+            <p>
+              Prior to drawing a new component, we had to make sure that the current design could be supported by existing infrastructure. The graphic below explains how information should be exchanged between user and the store’s inventory via beacons. We wanted to maintain privacy by making the cart the conduit between location and shopper with no information about the user being stored when using the system.<br><br>
+              <img src="work/mapme/architecture.png" class="fullimg">
+
+            </p><br>
+            <h2 class="mapmetitle">Crafting the interface.</h2>
+            <p>
+              The entry point for shopper list creation would stem from the ‘Home’ screen. Although the ‘Home’ tab offers information about sales, location, and connecting to the cart, users can edit their settings within their profile preferences. We wanted the interface as a whole to be as simple and streamlined as possible. You can see this with the tri-option navigation bar at the bottom of the screen. <br><br>
+            <img src="work/mapme/components1.png" class="projectimg"><br><br>
+              In each page, the focus tends to switch off between item information and location. For each page, I referred back to the user research to determine whether I should set the focus on items, price or location in the store.
+            <img src="work/mapme/components2.png" class="projectimg"><br><br>
+            </p>
+            <p><span style="font-family: SFUI Bold">RESULTS</span><br></p>
+              <h2 class="mapmetitle">Physical Prototyping</h2>
+              <p>
+            As this project was for SI 612, we had to meet specific computer hardware requirements. As product designer and engineer for my team I placed the particle photon microcontroller in a box on the shopping cart, and wrote C++ code to turn the LED light green when the QR was scanned, signaling a successful connection.<br><br>              If you’re interested in learning more about my summer at PTC, I would love the opportunity to discuss.
+            In speaking to users, we were pleasantly surprised by how many times we heard, “I always use my grocery store’s app”. We hope that a concept like MapMe can push conceptualizing traditional grocery shopping applications further by helping shoppers keep their autonomy and security central to the design.<br><br>
+            <center><iframe width="100%" height="500" src="https://www.youtube.com/embed/eHc_DfQ_DlY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+          </p>
+
+
+  </div></div></div>
+  <div class="c12 divider">
+  <!--  <hr style="border: 1.5px solid black;"></hr>-->
+</div>
+  <!-- Scroll To Top -->
+
+    <a href="#top" class="no-display" id="scrollTop"></a>
+  </div>
+</body>
+
+<footer>
+  <div class="row">
+    <div class="c1"></div>
+    <div class="c12">
+      <br><br>
+      <h4>Like what you see? Send me an email  @<a href="mailto:kadailey@umich.edu?subject=Hey!" target="_blank">kadailey@umich.edu</a></h4>
+      <h5> Site made by me & lots of ☕️</h5>
+      <h4 class="links">
+        <a href="https://twitter.com/k_dails" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/dailey_made/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/k_dails/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/karadailey/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </h4>
+    </div>
+    <div class="c1"></div>
+  </div>
+</footer>
+</html>
