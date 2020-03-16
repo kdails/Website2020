@@ -5,7 +5,7 @@ html {
     padding: 3em;
     padding-bottom: 0;
     overflow-x: hidden;
-    background: linear-gradient(0deg, #abc7ff, #ffffff, #fdd8ff);
+    background: linear-gradient(189deg, #dcfff6, #ffdffa, #d8f9ff, #fff6e1, #ffffff);
     background-size: 600% 600%;
 
     -webkit-animation: AnimationName 40s ease infinite;
@@ -594,6 +594,55 @@ i {
       line-height: 3em;
       justify-content: space-between;
 }
+    .ptctitle {
+      width: maximum;
+      font-size: 8vw;
+
+      background: linear-gradient(to right, #0bb502 30%, #00cf02 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+    .mapmetitle {
+      width: maximum;
+      font-size: 8vw;
+
+      background: linear-gradient(to right, #1c00c9 30%, #0066ff, #007dff 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .makeathontitle {
+      width: maximum;
+      font-size: 8vw;
+
+      background: linear-gradient(to right, #16b9ff 30%, #097cad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .groupertitle {
+        width: maximum;
+        font-size: 8vw;
+
+        background: linear-gradient(to right, #3d376c, #35849d, #6ffbea 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .incentivizetitle {
+        width: maximum;
+        font-size: 8vw;
+        background: linear-gradient(137.5deg, #ff8d54, #ffb262 18%, #72b3a5 18%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .ftmyerstitle {
+      width: maximum;
+      font-size: 8vw;
+
+      background: linear-gradient(150.5deg, #211f42, #275173, 18%, #3485c1 18%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
 
     .klogo {
         height: 10vw;
@@ -604,7 +653,7 @@ i {
     }
     h1 {
         font-size: 1.75em;
-        margin-top: 7vw;
+        margin-top: 2vw;
     }
     .h2gt {
         font-family: 'GT MERICA';
@@ -620,8 +669,8 @@ i {
         font-size: 1em;
     }
     .option {
-        font-size: 2.0vw;
-        margin: 2vw;
+        font-size: 2.4vw;
+        margin: 1.25vw;
     }
     .title {
         font-size: 1.75em;
@@ -632,8 +681,8 @@ i {
     .project {
         display: inline-block;
         position: relative;
-        height: 50vw;
-        width: 50vw;
+        height: 65vw;
+        width: 65vw;
         padding-bottom: 5vw;
         border-style: solid;
         border-width: medium;
@@ -644,8 +693,8 @@ i {
     .projecttop {
         display: inline-block;
         position: relative;
-        height: 50vw;
-        width: 50vw;
+        height: 65vw;
+        width: 65vw;
         border-style: solid;
         border-width: medium;
         border-color: black;
@@ -654,11 +703,11 @@ i {
     }
     .project h2 {
         font-size: 6vw;
-        margin-top: 35vw;
+        margin-top: 47vw;
         margin-bottom: 1vw;
     }
     .caption{
-        font-size: 2.3vw;
+        font-size: 3.5vw;
     }
     .makeathon {
         padding-left: 0;
