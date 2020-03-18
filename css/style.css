@@ -69,7 +69,7 @@ html {
 }
 }
 h1 {
-    font-family: 'SFUI';
+    font-family: 'GT Merica';
     font-size: 3em;
     font-weight: inherit;
     line-height: 1.25em;
@@ -343,7 +343,7 @@ img {
     font-family: 'SFUI Semibold';
 }
 .title {
-    font-size: 4.2vw;
+    font-size: 6vw;
     font-family: 'SFUI Heavy';
 }
 
@@ -590,7 +590,7 @@ i {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
     header {
       margin-bottom: 1.5em;
       line-height: 3em;
@@ -654,7 +654,7 @@ i {
         display: none;
     }
     h1 {
-        font-size: 1.75em;
+        font-size: 3vw;
         margin-top: 2vw;
     }
     .h2gt {
@@ -675,7 +675,7 @@ i {
         margin: 1.25vw;
     }
     .title {
-        font-size: 1.75em;
+        font-size: 5.2em;
     }
     .projectimg {
         height: auto;
@@ -683,8 +683,8 @@ i {
     .project {
         display: inline-block;
         position: relative;
-        height: 65vw;
-        width: 65vw;
+        height: 75vw;
+        width: 75vw;
         padding-bottom: 5vw;
         border-style: solid;
         border-width: medium;
@@ -696,8 +696,8 @@ i {
     .projecttop {
         display: inline-block;
         position: relative;
-        height: 65vw;
-        width: 65vw;
+        height: 75vw;
+        width: 75vw;
         border-style: solid;
         border-width: medium;
         border-color: black;
@@ -706,11 +706,11 @@ i {
     }
     .project h2 {
         font-size: 6vw;
-        margin-top: 47vw;
+        margin-top: 55vw;
         margin-bottom: 1vw;
     }
     .caption{
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     .makeathon {
         padding-left: 0;
