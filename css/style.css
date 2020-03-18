@@ -250,7 +250,7 @@ img {
     margin-right: 4vw;
 }
 .right {
-    margin-left: 4vw;
+    margin-left: vw;
 }
 
 .caption {
@@ -564,7 +564,8 @@ i {
         border-style: solid;
         border-width: medium;
         border-color: black;
-        margin-bottom:3vw;
+        margin-bottom: 7vw;
+        margin-left: 5vw;
     }
     .projecttop {
         display: inline-block;
@@ -689,6 +690,7 @@ i {
         border-color: black;
         color: #black;
         text-align: center;
+        margin-left: 0;
     }
     .projecttop {
         display: inline-block;
