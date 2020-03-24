@@ -248,6 +248,10 @@ img {
     margin-left: vw;
 }
 
+.spacing {
+  margin-left: 2vw;
+}
+
 .caption {
     font-family: 'SFUI Semibold';
     font-size: 1.7vw;
