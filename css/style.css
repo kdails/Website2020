@@ -5,12 +5,12 @@ html {
     padding: 3em;
     padding-bottom: 0;
     overflow-x: hidden;
-    background: linear-gradient(189deg, #dcfff6, #ffdffa, #d8f9ff, #fff6e1, #ffffff);
+    background: linear-gradient(157deg, #dcfff6, #ffdffa, #d8f9ff, #fff6e1, #ffffff);
     background-size: 600% 600%;
 
-    -webkit-animation: AnimationName 40s ease infinite;
-    -moz-animation: AnimationName 40s ease infinite;
-    animation: AnimationName 40s ease infinite;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
 }
     @-webkit-keyframes AnimationName {
         0%{background-position:48% 0%}
@@ -98,7 +98,7 @@ h3 {
     font-weight: inherit;
 }
 h4 {
-    font-family: 'SFUI Bold';
+    font-family: 'SFUI';
     font-size: 1.35em;
     font-weight: inherit;
     line-height: 1.5em;
@@ -219,9 +219,6 @@ img {
   left:2vw;
   display: inline-block;
   position: relative;
-  border-style: solid;
-  border-width: thick;
-  border-color: black;
   margin-bottom: 7vw;
   margin-left: 5vw;
    }
@@ -243,9 +240,6 @@ img {
   position: relative;
   display: inline-block;
   position: relative;
-  border-style: solid;
-  border-width: thick;
-  border-color: black;
    }
 .left {
     margin-right: 4vw;
@@ -334,7 +328,7 @@ img {
 
 /* Project Pages */
 .divider {
-    border-top: 4px solid #000000;
+    border-top: 2px solid #000000;
     width:100%;
 }
 .title1 {
@@ -561,9 +555,7 @@ i {
         width: 32vw;
         height: 32vw;
         padding: 1.5vw;
-        border-style: solid;
-        border-width: medium;
-        border-color: black;
+
         margin-bottom: 7vw;
         margin-left: 5vw;
     }
@@ -572,9 +564,6 @@ i {
         position: relative;
         width: 32vw;
         height: 32vw;
-        border-style: solid;
-        border-width: medium;
-        border-color: black;
     }
 
     #exploration {
@@ -686,10 +675,6 @@ i {
         width: 75vw;
         left:-1vw !important;
         padding-bottom: 5vw;
-        border-style: solid;
-        border-width: medium;
-        border-color: black;
-        color: #black;
         text-align: center;
         margin-left: 0;
     }
@@ -698,10 +683,6 @@ i {
         position: relative;
         height: 75vw;
         width: 75vw;
-        border-style: solid;
-        border-width: medium;
-        border-color: black;
-        color: #black;
         text-align: center;
     }
     .project h2 {
