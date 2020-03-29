@@ -86,7 +86,7 @@ h2 {
     position: relative;
 }
 .h2gt {
-    font-family: 'SFUI Heavy';
+    font-family: 'GT Merica';
     font-size: 4em;
     font-weight: inherit;
     line-height: 1.25em;
@@ -340,7 +340,7 @@ img {
     font-family: 'SFUI Semibold';
 }
 .title {
-    font-size: 5.5vw;
+    font-size: 4.5vw;
     font-family: 'SFUI Heavy';
 }
 
