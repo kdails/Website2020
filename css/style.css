@@ -215,8 +215,6 @@ img {
   width: 32vw;
   height: 32vw;
   position: relative;
-  padding: 1.9vw;
-  left:2vw;
   display: inline-block;
   position: relative;
   margin-bottom: 7vw;
@@ -558,8 +556,6 @@ i {
         position: relative;
         width: 32vw;
         height: 32vw;
-        padding: 1.5vw;
-
         margin-bottom: 7vw;
         margin-left: 5vw;
     }
